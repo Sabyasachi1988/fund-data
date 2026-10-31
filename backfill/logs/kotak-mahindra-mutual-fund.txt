@@ -1,0 +1,29 @@
+== 2026-05 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 116,
+kotak-mahindra-mutual-fund 2026-05: schemes 110 matched 103
+== 2026-04 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 119,
+kotak-mahindra-mutual-fund 2026-04: schemes 110 matched 102
+== 2026-03 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 120,
+kotak-mahindra-mutual-fund 2026-03: schemes 113 matched 102
+== 2026-02 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 118,
+kotak-mahindra-mutual-fund 2026-02: schemes 111 matched 98
+== 2026-01 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 116,
+kotak-mahindra-mutual-fund 2026-01: schemes 109 matched 92
+== 2025-12 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 114,
+kotak-mahindra-mutual-fund 2025-12: schemes 107 matched 90
+== 2025-11 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 113,
+kotak-mahindra-mutual-fund 2025-11: schemes 107 matched 90
+== 2025-10 kotak-mahindra-mutual-fund
