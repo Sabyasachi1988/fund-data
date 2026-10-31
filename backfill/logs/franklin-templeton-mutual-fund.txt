@@ -1,0 +1,68 @@
+== 2026-05 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2026-05: schemes 40 matched 38
+== 2026-04 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2026-04: schemes 40 matched 38
+== 2026-03 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2026-03: schemes 39 matched 38
+== 2026-02 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2026-02: schemes 39 matched 35
+== 2026-01 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2026-01: schemes 39 matched 35
+== 2025-12 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 40,
+franklin-templeton-mutual-fund 2025-12: schemes 38 matched 35
+== 2025-11 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-11: schemes 38 matched 34
+== 2025-10 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-10: schemes 38 matched 34
+== 2025-09 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-09: schemes 37 matched 33
+== 2025-08 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-08: schemes 38 matched 33
+== 2025-07 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 38,
+franklin-templeton-mutual-fund 2025-07: schemes 37 matched 31
+== 2025-06 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 38,
+franklin-templeton-mutual-fund 2025-06: schemes 37 matched 30
+== 2025-05 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-05: schemes 38 matched 29
+== 2025-04 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-04: schemes 38 matched 28
+== 2025-03 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 39,
+franklin-templeton-mutual-fund 2025-03: schemes 37 matched 28
+== 2025-02 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 38,
+franklin-templeton-mutual-fund 2025-02: schemes 37 matched 27
+== 2025-01 franklin-templeton-mutual-fund
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+  "schemes": 38,
+franklin-templeton-mutual-fund 2025-01: schemes 37 matched 27
