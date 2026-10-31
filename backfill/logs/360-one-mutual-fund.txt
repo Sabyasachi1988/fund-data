@@ -1,0 +1,68 @@
+== 2026-05 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 12,
+360-one-mutual-fund 2026-05: schemes 10 matched 8
+== 2026-04 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2026-04: schemes 9 matched 6
+== 2026-03 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2026-03: schemes 9 matched 6
+== 2026-02 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2026-02: schemes 9 matched 6
+== 2026-01 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2026-01: schemes 8 matched 6
+== 2025-12 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2025-12: schemes 8 matched 6
+== 2025-11 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2025-11: schemes 10 matched 6
+== 2025-10 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2025-10: schemes 10 matched 6
+== 2025-09 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2025-09: schemes 11 matched 6
+== 2025-08 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 11,
+360-one-mutual-fund 2025-08: schemes 11 matched 6
+== 2025-07 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 10,
+360-one-mutual-fund 2025-07: schemes 10 matched 5
+== 2025-06 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 9,
+360-one-mutual-fund 2025-06: schemes 9 matched 5
+== 2025-05 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 9,
+360-one-mutual-fund 2025-05: schemes 9 matched 5
+== 2025-04 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 9,
+360-one-mutual-fund 2025-04: schemes 9 matched 5
+== 2025-03 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 9,
+360-one-mutual-fund 2025-03: schemes 9 matched 5
+== 2025-02 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 7,
+360-one-mutual-fund 2025-02: schemes 7 matched 5
+== 2025-01 360-one-mutual-fund
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+  "schemes": 7,
+360-one-mutual-fund 2025-01: schemes 7 matched 5
