@@ -1,0 +1,93 @@
+name: targeted-backfill
+# Fetch + parse monthly disclosures for the AMCs behind the user's funds, over a range of months,
+# keep only the target schemes (staging/), and probe two data sources. Public repo: free minutes.
+# No Actions artifacts are uploaded.
+on:
+  workflow_dispatch:
+    inputs:
+      periods:
+        description: "Space-separated YYYY-MM list"
+        required: true
+        default: "2025-01 2025-02 2025-03 2025-04 2025-05 2025-06 2025-07 2025-08 2025-09 2025-10 2025-11 2025-12 2026-01 2026-02 2026-03 2026-04 2026-05"
+      amcs:
+        description: "Space-separated AMC ids"
+        required: true
+        default: "nippon-india-mutual-fund ppfas-mutual-fund kotak-mahindra-mutual-fund bandhan-mutual-fund"
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Toolkit
+        run: |
+          git clone -q --depth 1 https://github.com/subscriptionmanager26-png/fund-disclosures /tmp/fd
+          cd /tmp/fd && python -m venv .venv && .venv/bin/pip install -q -r requirements.txt
+          (npm ci --omit=dev || npm install --omit=dev) 2>&1 | tail -1
+      - name: Probe Bandhan listing and mfapi NAV depth
+        continue-on-error: true
+        run: |
+          mkdir -p probe
+          python3 - <<'PY' > probe/sources.txt 2>&1
+          import json, urllib.request, urllib.parse, re
+          def get(u, ref=None):
+              req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json", **({"Referer": ref} if ref else {})})
+              return json.loads(urllib.request.urlopen(req, timeout=120).read().decode("utf-8", "ignore"))
+          print("== Bandhan monthly-portfolios listing")
+          base = "https://cmsnew.bandhanmutual.com/wp-json/finance-api/v1/posts/monthly-portfolios"
+          titles = []
+          for page in range(1, 40):
+              try:
+                  d = get(f"{base}?page={page}&per_page=100", "https://bandhanmutual.com/statutory-disclosures/scheme-portfolios/monthly-and-half-yearly")
+              except Exception as e:
+                  print("page", page, "error", e); break
+              rows = d.get("data") if isinstance(d, dict) else None
+              if not rows: break
+              titles += [r.get("title", "") for r in rows]
+          print("rows", len(titles))
+          yrs = {}
+          for t in titles:
+              m = re.search(r"(20\d\d)", t or "")
+              if m: yrs[m.group(1)] = yrs.get(m.group(1), 0) + 1
+          print("rows by year in title", sorted(yrs.items()))
+          for t in [t for t in titles if "mall" in t][:12]: print("  ", t)
+          print("== mfapi.in NAV depth")
+          for q in ["Parag Parikh Flexi Cap Direct Growth", "Kotak Multicap Direct Growth", "Nippon India Multi Cap Direct Growth",
+                    "Bandhan Small Cap Direct Growth", "Nippon India Growth Direct Growth", "Nippon India Small Cap Direct Growth", "Momentum 50 Direct Growth"]:
+              try:
+                  s = get("https://api.mfapi.in/mf/search?q=" + urllib.parse.quote(q))
+                  hit = [x for x in s if "direct" in x["schemeName"].lower() and "growth" in x["schemeName"].lower() and "idcw" not in x["schemeName"].lower()][:2]
+                  for h in hit:
+                      d = get("https://api.mfapi.in/mf/" + str(h["schemeCode"]))
+                      data = d["data"]
+                      print(q, "->", h["schemeCode"], h["schemeName"], "| points", len(data), "| first", data[-1]["date"], "| last", data[0]["date"])
+              except Exception as e:
+                  print(q, "error", e)
+          PY
+          cat probe/sources.txt | cut -c1-200
+      - name: Fetch, parse, stage per month
+        run: |
+          cd /tmp/fd
+          for p in ${{ inputs.periods }}; do
+            for a in ${{ inputs.amcs }}; do
+              echo "== $p $a"
+              timeout 600 npm run fetch -- --type=monthly --period=$p --amc=$a 2>&1 | grep -E "file\(s\)|ERROR|saved" | cut -c1-200 || true
+              timeout 600 npm run parse:amc -- --amc=$a --type=monthly --period=$p 2>&1 | grep -E '"schemes"|"errors"|Error' | head -3 | cut -c1-200 || true
+            done
+            python3 $GITHUB_WORKSPACE/build/stage_target.py data/parsed $GITHUB_WORKSPACE/staging 2>&1 | tail -12
+            rm -rf data/disclosures/monthly data/parsed/monthly
+          done 2>&1 | tee $GITHUB_WORKSPACE/probe/targeted-log.txt | tail -300
+      - name: Commit staged data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add staging probe
+          git diff --staged --quiet && echo none || (git commit -qm "Targeted backfill staging" && git push)
