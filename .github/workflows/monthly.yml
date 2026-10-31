@@ -21,9 +21,10 @@ jobs:
           python-version: "3.12"
       - run: pip install openpyxl
       - run: build/sync_archive.sh
+      - run: python3 build/publish.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A data
+          git add -A data pub
           git diff --staged --quiet && echo "no changes" || (git commit -m "Add monthly splits" && git push)
