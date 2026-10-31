@@ -75,6 +75,15 @@ def classify(h, cap):
     isin = (h.get("isin") or "").strip()
     if pct is None:
         return None, None
+    # The upstream parser types some holdings from their section/name rather than what they are. Trust the ISIN:
+    # an INE... line with an industry is a listed Indian company whatever it was typed as (e.g. MCX typed "commodity",
+    # an AMC's own shares typed "fund_unit"); a foreign-ISIN fund unit or share is foreign exposure, not "other".
+    if t in ("commodity", "fund_unit", "other") and isin.startswith("INE") and (h.get("industry") or "").strip():
+        t = "equity"
+    elif t == "fund_unit" and isin and not isin.startswith("IN"):
+        return "foreign", None
+    elif t == "fund_unit" and re.search(r"corporate debt market", (h.get("instrument") or ""), re.I):
+        return "debt", None
     if t == "equity":
         ind = h.get("industry") or ""
         if RATING.search(ind):
