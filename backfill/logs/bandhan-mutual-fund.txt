@@ -1,0 +1,5 @@
+== 2026-05 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-04 bandhan-mutual-fund
