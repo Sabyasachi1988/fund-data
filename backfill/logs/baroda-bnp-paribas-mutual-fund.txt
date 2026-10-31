@@ -1,0 +1,68 @@
+== 2026-05 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-04 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-03 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-02 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-01 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-12 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-11 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-10 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-09 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-08 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-07 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-06 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-05 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-04 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-03 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-02 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-01 baroda-bnp-paribas-mutual-fund
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+  "schemes": 0,
+no usable schemes
