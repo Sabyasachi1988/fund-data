@@ -9,6 +9,10 @@ on:
         description: "Month to probe, YYYY-MM"
         required: true
         default: "2025-12"
+      concurrency:
+        description: "Parallel AMC fetches"
+        required: false
+        default: "3"
 permissions:
   contents: write
 jobs:
@@ -34,7 +38,7 @@ jobs:
         continue-on-error: true
         run: |
           cd /tmp/fd
-          npm run fetch -- --type=monthly --period=${{ inputs.period }} > /tmp/fetch.log 2>&1 || true
+          npm run fetch -- --type=monthly --period=${{ inputs.period }} --concurrency=${{ inputs.concurrency }} > /tmp/fetch.log 2>&1 || true
           tail -150 /tmp/fetch.log
           echo "--- files fetched:"
           find data/disclosures -type f | wc -l
@@ -44,7 +48,7 @@ jobs:
         continue-on-error: true
         run: |
           cd /tmp/fd
-          npm run parse:amc -- --type=monthly --period=${{ inputs.period }} > /tmp/parse.log 2>&1 || true
+          npm run parse:amc -- --all --type=monthly --period=${{ inputs.period }} > /tmp/parse.log 2>&1 || true
           tail -150 /tmp/parse.log
           echo "--- parsed:"
           find data/parsed -type f | wc -l
@@ -62,6 +66,6 @@ jobs:
             echo "== parse log (last 200 lines)"; tail -200 /tmp/parse.log || true
             echo "== parsed"; find /tmp/fd/data/parsed -type f | wc -l; du -sh /tmp/fd/data/parsed || true
             find /tmp/fd/data/parsed -type f | sed 's#/tmp/fd/data/parsed/##' | head -100
-          } > probe/${{ inputs.period }}.txt 2>&1
+          } > probe/${{ inputs.period }}-c${{ inputs.concurrency }}.txt 2>&1
           git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
           git add probe && git commit -qm "Probe result ${{ inputs.period }}" && git push
