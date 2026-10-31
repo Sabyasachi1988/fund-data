@@ -1,0 +1,2 @@
+== 2026-05 hsbc-mutual-fund
+  HSBC Mutual Fund: 45 file(s) (python fetch_hsbc.py (monthly)) · saved 45/45
