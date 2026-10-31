@@ -56,9 +56,9 @@ def main(parsed, out):
         d = json.load(open(f))
         m = d["meta"]
         name = m.get("scheme_name") or ""
-        if re.search(r"nippon|bandhan|multi", name, re.I):
+        if True:
             os.makedirs(os.path.join(out, "names"), exist_ok=True)
-            open(os.path.join(out, "names", f.split("/monthly/")[1][:7] + ".txt"), "a").write(" ".join(name.split())[:110] + "\n")
+            open(os.path.join(out, "names", f.split("/monthly/")[1][:7] + ".txt"), "a").write(str(m.get("amc_id"))[:6] + " | " + " ".join(name.split())[:70] + " | " + str(len(d["holdings"])) + "\n")
         key = None if re.search(r"index|etf|nifty ?(mid|small|next)|large|fof|fund of", name, re.I) and not re.search(r"momentum", name, re.I) else next((k for k, rx in TARGETS if re.search(rx, name, re.I)), None)
         if not key:
             continue
