@@ -1,0 +1,28 @@
+name: screener
+# Builds the all-funds screener bundle (every open-ended Direct-Growth scheme: metrics + weekly NAV history) and
+# publishes it as a GitHub Release asset (not committed to git, so the repo does not grow). Public repo: free minutes.
+on:
+  schedule:
+    - cron: "40 7 20 * *"   # 20th of each month, after the monthly fund-data job
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: screener
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 build/screener.py /tmp/screener
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view screener >/dev/null 2>&1 || gh release create screener --title "Screener bundle" --notes "Latest all-funds screener data (replaced on every run)."
+          gh release upload screener /tmp/screener/screener.json.gz /tmp/screener/nav.json.gz --clobber
