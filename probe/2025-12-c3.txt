@@ -1,0 +1,595 @@
+period 2025-12
+== fetch log (last 200 lines)
+
+> fund-disclosures@0.2.0 fetch
+> node scrapers/node/fetch-period.js --type=monthly --period=2025-12 --concurrency=3
+
+Fetch monthly 2025-12 → 2025-12-31 · 51 AMC(s) · concurrency=3
+
+→ 360-one-mutual-fund [python_ref]
+→ abakkus-mutual-fund [python_ref]
+→ aditya-birla-sun-life-mutual-fund [python_ref]
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+→ angel-one-mutual-fund [python_ref]
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_angel_one.py", line 309, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_angel_one.py", line 246, in main
+    html_text = fetch_html(ctx=ctx)
+            )
+→ axis-mutual-fund [axis_cms]
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+→ bajaj-finserv-mutual-fund [python_ref]
+  Bajaj Finserv Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_bajaj.py", line 264, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_bajaj.py", line 212, in main
+    for it in fetch_media_search(frag):
+              ^^)
+→ bandhan-mutual-fund [python_ref]
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+→ bank-of-india-mutual-fund [python_ref]
+  Aditya Birla Sun Life Mutual Fund: ERROR terminated
+→ baroda-bnp-paribas-mutual-fund [python_ref]
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+→ canara-robeco-mutual-fund [python_ref]
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+→ capitalmind-mutual-fund [static_html]
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+→ choice-mutual-fund [python_ref]
+  Choice Mutual Fund: 0 file(s) (python ok but empty (fetch_choice.py, monthly))
+→ dsp-mutual-fund [static_html]
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+→ edelweiss-mutual-fund [python_ref]
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_edelweiss.py", line 267, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_edelweiss.py", line 222, in main
+    payload = fetch_menu_payload(session, args.i)
+→ franklin-templeton-mutual-fund [python_ref]
+  Capitalmind Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+→ groww-mutual-fund [python_ref]
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+→ hdfc-mutual-fund [hdfc_cms]
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+→ helios-mutual-fund [python_ref]
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+→ hsbc-mutual-fund [python_ref]
+  HSBC Mutual Fund: 45 file(s) (python fetch_hsbc.py (monthly)) · saved 45/45
+→ icici-prudential-mutual-fund [icici_nms]
+  Canara Robeco Mutual Fund: 26 file(s) (python fetch_canara_robeco.py (monthly)) · saved 26/26
+→ il-fs-mutual-fund-idf [python_ref]
+  IL&FS Mutual Fund (IDF): 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 1357, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/hostedtoolcache/Python)
+→ invesco-mutual-fund [python_ref]
+  ICICI Prudential Mutual Fund: ERROR The operation was aborted due to timeout
+→ iti-mutual-fund [python_ref]
+  HDFC Mutual Fund: ERROR The operation was aborted due to timeout
+→ jio-blackrock-mutual-fund [python_ref]
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+→ jm-financial-mutual-fund [python_ref]
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+→ kotak-mahindra-mutual-fund [python_ref]
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+→ lic-mutual-fund [python_ref]
+  Invesco Mutual Fund: ERROR The operation was aborted due to timeout
+→ mahindra-manulife-mutual-fund [python_ref]
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+→ mirae-asset-mutual-fund [mirae_ajax]
+  Jio BlackRock Mutual Fund: 11 file(s) (python fetch_jio_blackrock.py (monthly)) · saved 11/11
+→ motilal-oswal-mutual-fund [python_ref]
+  Mirae Asset Mutual Fund: ERROR fetch failed
+→ navi-mutual-fund [python_ref]
+  Navi Mutual Fund: 0 file(s) (python_exit_1: Navi portfolio page blocked from this network (Cloudflare 403). Set CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_API_TOKEN for Browser Rendering, or NAVI_WP_NONCE from a browser session on navi.com.
+Underlying error: HTTP Error 403: Forbidden
+)
+→ nippon-india-mutual-fund [python_ref]
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+→ nj-mutual-fund [nj_downloads]
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+→ old-bridge-mutual-fund [python_ref]
+  Old Bridge Mutual Fund: 2 file(s) (python fetch_oldbridge.py (monthly)) · saved 2/2
+→ pgim-india-mutual-fund [python_ref]
+  LIC Mutual Fund: 42 file(s) (python fetch_lic.py (monthly)) · saved 42/42
+→ ppfas-mutual-fund [python_ref]
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+→ quant-mutual-fund [quant_aspx]
+  quant Mutual Fund: 1 file(s) (aspx monthly (1)) · saved 1/1
+→ quantum-mutual-fund [python_ref]
+  Quantum Mutual Fund: 1 file(s) (python fetch_quantum.py (monthly)) · saved 1/1
+→ samco-mutual-fund [static_html]
+  NJ Mutual Fund: ERROR fetch failed
+→ sbi-mutual-fund [sbi_sitefinity]
+  PGIM India Mutual Fund: 25 file(s) (python fetch_pgim.py (monthly)) · saved 25/25
+→ shriram-mutual-fund [python_ref]
+  Shriram Mutual Fund: 0 file(s) (python fetch_shriram.py (monthly) · rejected 1 (see rejection report))
+→ sundaram-mutual-fund [python_ref]
+  Sundaram Mutual Fund: 2 file(s) (python fetch_sundaram.py (monthly)) · saved 2/2
+→ tata-mutual-fund [python_ref]
+  Tata Mutual Fund: 1 file(s) (python fetch_tata.py (monthly)) · saved 1/1
+→ taurus-mutual-fund [python_ref]
+  Taurus Mutual Fund: 8 file(s) (python fetch_taurus.py (monthly)) · saved 8/8
+→ trust-mutual-fund [python_ref]
+  Trust Mutual Fund: 1 file(s) (python fetch_trust.py (monthly)) · saved 1/1
+→ unifi-mutual-fund [static_html]
+(node:2290) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  Unifi Mutual Fund: 4 file(s) (rejected 47 (see rejection report)) · saved 4/4
+→ union-mutual-fund [python_ref]
+  Union Mutual Fund: 0 file(s) (python ok but empty (fetch_union.py, monthly))
+→ uti-mutual-fund [uti_api]
+  UTI Mutual Fund: 1 file(s) (month=December) · saved 1/1
+→ the-wealth-company-mutual-fund [python_ref]
+  The Wealth Company Mutual Fund: 0 file(s) (python ok but empty (fetch_wealth_company.py, monthly))
+→ whiteoak-capital-mutual-fund [whiteoak_cms]
+  WhiteOak Capital Mutual Fund: ERROR whiteoak cms http_403
+→ zerodha-mutual-fund [static_html]
+  Samco Mutual Fund: 34 file(s) (rejected 134 (see rejection report)) · saved 34/34
+  Zerodha Mutual Fund: 23 file(s) (rejected 142 (see rejection report)) · saved 21/23
+  SBI Mutual Fund: 125 file(s) (PSYear=2025 PSMonth=December) · saved 125/125
+
+Done. ok=31 empty=13 error=7 rejected=331
+Manifest: /tmp/fd/data/probes/fetch-monthly-2025-12-31.json
+Rejections: /tmp/fd/data/probes/fetch-rejections-monthly-2025-12-31.md
+== files fetched
+411
+94M	/tmp/fd/data/disclosures
+monthly/.gitkeep
+monthly/2025-12-31/bank-of-india-mutual-fund/monthly-portfolio---31-december-2025.xlsx
+monthly/2025-12-31/sundaram-mutual-fund/monthlyportfolio_090126163010.xlsx
+monthly/2025-12-31/sundaram-mutual-fund/monthlyportfolio_090126162746.xlsx
+monthly/2025-12-31/unifi-mutual-fund/MP-Unifi-Liquid-Fund-31122025.xls
+monthly/2025-12-31/unifi-mutual-fund/FN-Unifi-Liquid-Fund-31122025.xls
+monthly/2025-12-31/unifi-mutual-fund/MP-Unifi-Dynamic-Asset-Allocation-Fund-31122025.xlsx
+monthly/2025-12-31/unifi-mutual-fund/MP-Unifi-Flexi-Cap-Fund-31122025.xlsx
+monthly/2025-12-31/groww-mutual-fund/Monthly Portfolio- Dec 31_ 2025.xls
+monthly/2025-12-31/abakkus-mutual-fund/Abakkus_MF_MONTHLY_PORTFOLIO_31_12_2025_562986311e.xlsx
+monthly/2025-12-31/nippon-india-mutual-fund/NIMF-MONTHLY-PORTFOLIO-31-Dec-25.xls
+monthly/2025-12-31/zerodha-mutual-fund/ZEN50- Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZN250 - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZMLTI - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZGFOF - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZOVER - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/Alignment of Interest Disclosure Dec 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZELSS - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZE100- Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZLIQD - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZBSEN - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZESML- Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/Investments by AMC December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZNFTY - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZSFOF - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/Debt Index Replication Factor (DIRF) 31-Dec-25.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZE150- Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZLTGC - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/Scheme Performance - December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/December - 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZSLVR - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/zerodha-mutual-fund/ZGOLD - Monthly Portfolio December 2025.xlsx
+monthly/2025-12-31/old-bridge-mutual-fund/Monthly_Portfolio_AF_Dec2025_475d9b7f54.xlsx
+monthly/2025-12-31/old-bridge-mutual-fund/Monthly_Portfolio_FE_Dec2025_ef99c4d3f6.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xq8k1-b1b4a8.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xycm2-f3e361.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xi4ef-3f2824.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xv7lf-c7f711.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3y1noz-e17d19.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xrxu2-db344f.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xkfxs-6435ab.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xtcmp-6c5ad0.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xmakq-bdf7fa.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xofrn-c4bdda.xlsx
+monthly/2025-12-31/jio-blackrock-mutual-fund/jioblackro-mk3xwmml-4f6450.xlsx
+monthly/2025-12-31/iti-mutual-fund/1767846272-Monthly_Portfolio_-December_2025.xlsx
+monthly/2025-12-31/mahindra-manulife-mutual-fund/fb1ed02d-4868-4321-8565-9ca430728ff8.xlsx
+monthly/2025-12-31/uti-mutual-fund/fw_uti_mf_scheme_portfolios_31.12.2025_1.zip
+monthly/2025-12-31/360-one-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_dec2025_Final_1_26507543ad.xlsx
+monthly/2025-12-31/dsp-mutual-fund/monthend-portfolio-december-31-2025.zip
+monthly/2025-12-31/dsp-mutual-fund/dsp-isin-debt-portfolio-as-on-31-dec-2025.xlsx
+monthly/2025-12-31/kotak-mahindra-mutual-fund/ConsolidatedSEBIPortfolioDecember2025.xlsx
+monthly/2025-12-31/ppfas-mutual-fund/PPLF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPTSF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPFCF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPAF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPDAAF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPCHF_PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/ppfas-mutual-fund/PPFAS_Monthly_Portfolio_Report_December_31_2025.xls
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Flexicap Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio-JM Aggressive Hybrid Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Short Duration Fund -  December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Liquid Fund -   December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM ELSS Tax Saver Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Large Cap Fund - December 31 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio -JM Medium to Long Duration Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Large and Midcap Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Focused Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Overnight Fund -   December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Arbitrage Fund  December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Value Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Low Duration Fund -  December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Dynamic Bond Fund -  December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Small Cap Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/jm-financial-mutual-fund/Monthly Portfolio - JM Midcap Fund - December 31_ 2025.xlsx
+monthly/2025-12-31/franklin-templeton-mutual-fund/Monthly-Portfolio-ISIN-31-Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MI---Canara-Robeco-Conservative-Hybrid-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/ET_C_R_ELSS_Tax_Saver_Fund_Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/SC---Canara-Robeco-Small-Cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/LC---Canara-Robeco-Large-Cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MF---Canara-Robeco-Multi-Cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/IN---Canara-Robeco-Infrastructure---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/EQ---Canara-Robeco-Large-and-Mid-Cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/OF---Canara-Robeco-Overnight-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/CF---Canara-Robeco-Consumer-Trends-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/DV---Canara-Robeco-Flexi-cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MN---Canara-Robeco-Manufacturing-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/FR---Canara-Robeco-Savings-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/LI-CR_Liquid_Fund-Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MA---Canara-Robeco-Multi-Asset-Allocation-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/CY---Canara-Robeco-Short-Duration-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/TA---Canara-Robeco-Ultra-Short-Term-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MO---Canara-Robeco-Corporate-Bond-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/IF---Canara-Robeco-Income-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/GB---Canara-Robeco-Equity-Hybrid-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/MD-Canara-Robeco-Mid-Cap-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/DB---Canara-Robeco-Dynamic-Bond-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/FE---Canara-Robeco-Focused-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/GL---Canara-Robeco-GILT-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/VF---Canara-Robeco-Value-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/BA---Canara-Robeco-Balanced-Advantage-Fund---Dec-2025.xlsx
+monthly/2025-12-31/canara-robeco-mutual-fund/BP---Canara-Robeco-Banking-and-PSU-Debt-Fund---Dec-2025.xlsx
+monthly/2025-12-31/samco-mutual-fund/December2025_1767423526.xlsx
+monthly/2025-12-31/samco-mutual-fund/29122025_1768371536.xlsx
+monthly/2025-12-31/samco-mutual-fund/December2025_1767423768.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoSpecialOpportunitiesFund_1767935829.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_Samco_Small_Cap_Fund_1767935877.xlsx
+monthly/2025-12-31/samco-mutual-fund/31122025_1768385186.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoLargeCapFund_1767935822.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SAMCOFLEXICAPFUND_1767935818.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoMultiAssetAllocationFund_1767935825.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_Samco_Arbitrage_Fund_1767935810.xlsx
+monthly/2025-12-31/samco-mutual-fund/30122025_1768371670.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoMultiCapFund_1767935827.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoDynamicAssetAllocationFund_1767935813.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SamcoLargeMidCapFund_1767935820.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_SAMCOELSSTAXSAVERFUND_1767935815.xlsx
+monthly/2025-12-31/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_December_2025_Samco_Active_Momentum_Fund_1767935808.xlsx
+monthly/2025-12-31/samco-mutual-fund/DetailsofVotescastduringthequarterendedDecember312025_1768292641.xlsx
+monthly/2025-12-31/quantum-mutual-fund/d3cb2692-3209-4fe9-8ee6-078502b2828f.xlsx
+monthly/2025-12-31/trust-mutual-fund/TRUSTMF-Monthly-Portfolio-Report-as-on-31.12.2025.xls
+monthly/2025-12-31/tata-mutual-fund/Monthly Portfolio as on 31st December 2025.xlsx
+monthly/2025-12-31/capitalmind-mutual-fund/CMFLEXI_Capitalmind_Monthly_Portfolio_Disclosure_Dec_2025_162c5013e2.xlsx
+monthly/2025-12-31/capitalmind-mutual-fund/CMLIQ_Monthly_Portfolio_Disclosure_Dec_2025_6f470f113d.xlsx
+monthly/2025-12-31/motilal-oswal-mutual-fund/Scheme Portfolio Detail December 2025.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDGSEC09-01-2026-10_01_08.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEGROW09-01-2026-10_00_37.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEINFA09-01-2026-10_00_37.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEEQTF09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEBADF09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDONTF09-01-2026-10_01_08.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEINNF09-01-2026-10_00_37.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEMAAF09-01-2026-10_00_37.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDUSTF09-01-2026-10_01_09.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEMFGF09-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDSTDF09-01-2026-10_01_09.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDGETF09-01-2026-10_01_08.xlsx
+monthly/2025-12-31/lic-mutual-fund/LECHID09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEEQSF09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEBALF09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LDBOND09-01-2026-10_01_08.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEMIDF09-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LET10009-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEINSX09-01-2026-10_00_37.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEBFSF09-01-2026-10_00_36.xlsx
+monthly/2025-12-31/lic-mutual-fund/LETF5009-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LENI5009-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LETFSX09-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LETAXP09-01-2026-10_00_38.xlsx
+monthly/2025-12-31/lic-mutual-fund/LEULIS09-01-2026-10_00_39.xlsx
+== parse log (last 200 lines)
+    "files": 21,
+    "parsed_files": 21,
+    "skipped_resume": 0,
+    "skipped_files": [],
+    "schemes": 21,
+    "holdings": 1044,
+    "errors": [],
+    "schemes_detail": [
+      {
+        "scheme": "Aggregate value of Investments held in the Scheme(s) by the Designated Employees for the month of December 2025",
+        "shortcode": null,
+        "as_of": "2025-12-31",
+        "holdings": 0,
+        "source_file": "Alignment of Interest Disclosure Dec 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "Scheme Code",
+        "shortcode": null,
+        "as_of": "2025-12-31",
+        "holdings": 7,
+        "source_file": "Debt Index Replication Factor (DIRF) 31-Dec-25.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "Sheet1",
+        "shortcode": null,
+        "as_of": "2025-12-31",
+        "holdings": 0,
+        "source_file": "December - 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "Scheme Name",
+        "shortcode": null,
+        "as_of": "2025-12-31",
+        "holdings": 0,
+        "source_file": "Investments by AMC December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "Name of Scheme",
+        "shortcode": null,
+        "as_of": "2025-12-31",
+        "holdings": 0,
+        "source_file": "Scheme Performance - December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZBSEN - Monthly Portfolio December 2025",
+        "shortcode": "ZBSEN",
+        "as_of": "2025-12-31",
+        "holdings": 33,
+        "source_file": "ZBSEN - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZE100- Monthly Portfolio December 2025",
+        "shortcode": "ZE100",
+        "as_of": "2025-12-31",
+        "holdings": 104,
+        "source_file": "ZE100- Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZE150- Monthly Portfolio December 2025",
+        "shortcode": "ZE150",
+        "as_of": "2025-12-31",
+        "holdings": 152,
+        "source_file": "ZE150- Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZELSS - Monthly Portfolio December 2025",
+        "shortcode": "ZELSS",
+        "as_of": "2025-12-31",
+        "holdings": 254,
+        "source_file": "ZELSS - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZEN50- Monthly Portfolio December 2025",
+        "shortcode": "ZEN50",
+        "as_of": "2025-12-31",
+        "holdings": 53,
+        "source_file": "ZEN50- Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZESML- Monthly Portfolio December 2025",
+        "shortcode": "ZESML",
+        "as_of": "2025-12-31",
+        "holdings": 102,
+        "source_file": "ZESML- Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZERODHA GOLD ETF",
+        "shortcode": "ZGFOF",
+        "as_of": "2025-12-31",
+        "holdings": 3,
+        "source_file": "ZGFOF - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZGOLD - Monthly Portfolio December 2025",
+        "shortcode": "ZGOLD",
+        "as_of": "2025-12-31",
+        "holdings": 5,
+        "source_file": "ZGOLD - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZLIQD - Monthly Portfolio December 2025",
+        "shortcode": "ZLIQD",
+        "as_of": "2025-12-31",
+        "holdings": 3,
+        "source_file": "ZLIQD - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZLTGC - Monthly Portfolio December 2025",
+        "shortcode": "ZLTGC",
+        "as_of": "2025-12-31",
+        "holdings": 5,
+        "source_file": "ZLTGC - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "Zerodha Nifty Midcap 150 ETF",
+        "shortcode": "ZMLTI",
+        "as_of": "2025-12-31",
+        "holdings": 6,
+        "source_file": "ZMLTI - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZN250 - Monthly Portfolio December 2025",
+        "shortcode": "ZN250",
+        "as_of": "2025-12-31",
+        "holdings": 254,
+        "source_file": "ZN250 - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZNFTY - Monthly Portfolio December 2025",
+        "shortcode": "ZNFTY",
+        "as_of": "2025-12-31",
+        "holdings": 53,
+        "source_file": "ZNFTY - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZOVER - Monthly Portfolio December 2025",
+        "shortcode": "ZOVER",
+        "as_of": "2025-12-31",
+        "holdings": 3,
+        "source_file": "ZOVER - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZERODHA SILVER ETF",
+        "shortcode": "ZSFOF",
+        "as_of": "2025-12-31",
+        "holdings": 3,
+        "source_file": "ZSFOF - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      },
+      {
+        "scheme": "ZSLVR - Monthly Portfolio December 2025",
+        "shortcode": "ZSLVR",
+        "as_of": "2025-12-31",
+        "holdings": 4,
+        "source_file": "ZSLVR - Monthly Portfolio December 2025.xlsx",
+        "type": "monthly",
+        "period": "2025-12-31"
+      }
+    ]
+  }
+]
+== parsed
+2409
+91M	/tmp/fd/data/parsed
+monthly/2025-12-31/bank-of-india-mutual-fund/YB02/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB02/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB41/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB41/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB43/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB43/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB31/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB31/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB36/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB36/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB08/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB08/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB40/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB40/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB39/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB39/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB09/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB09/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB21/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB21/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB01/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB01/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB38/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB38/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB07/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB07/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB06/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB06/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB37/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB37/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/schemes.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB33/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB33/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB04/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB04/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB42/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB42/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB35/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB35/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB26/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB26/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB32/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB32/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB34/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB34/portfolio.csv
+monthly/2025-12-31/bank-of-india-mutual-fund/YB30/portfolio.json
+monthly/2025-12-31/bank-of-india-mutual-fund/YB30/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/MIDCAP/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/MIDCAP/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPMON/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPMON/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SUNMFF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SUNMFF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX6/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX6/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/GLOB/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/GLOB/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPDYF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPDYF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX3/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX3/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPBAF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPBAF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX4/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX4/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SSFUND/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SSFUND/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SUNBDS/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SUNBDS/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SMMF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SMMF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX2/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX2/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SUNONF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SUNONF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX5/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTAX5/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/MULTIP/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/MULTIP/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SRURAL/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SRURAL/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTADV3/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTADV3/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SLTADV4/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SLTADV4/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/CAPEXG/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/CAPEXG/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPAHF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPAHF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPFOCUS/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPFOCUS/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SFRLTP/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SFRLTP/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SMILE/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SMILE/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPUSDF/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPUSDF/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPSN100/portfolio.json
+monthly/2025-12-31/sundaram-mutual-fund/SPSN100/portfolio.csv
+monthly/2025-12-31/sundaram-mutual-fund/SPLDF/portfolio.json
+sed: couldn't write 60 items to stdout: Broken pipe
+find: ‘standard output’: Broken pipe
+find: write error
