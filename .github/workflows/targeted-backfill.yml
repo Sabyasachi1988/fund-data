@@ -82,6 +82,7 @@ jobs:
               timeout 600 npm run fetch -- --type=monthly --period=$p --amc=$a 2>&1 | grep -E "file\(s\)|ERROR|saved" | cut -c1-200 || true
               timeout 600 npm run parse:amc -- --amc=$a --type=monthly --period=$p 2>&1 | grep -E '"schemes"|"errors"|Error' | head -3 | cut -c1-200 || true
             done
+            mkdir -p $GITHUB_WORKSPACE/probe/raw/$p; find data/disclosures/monthly -ipath '*bandhan*' -type f -size -3000k -exec cp {} $GITHUB_WORKSPACE/probe/raw/$p/ \; 2>/dev/null; true
             python3 $GITHUB_WORKSPACE/build/stage_target.py data/parsed $GITHUB_WORKSPACE/staging 2>&1 | tail -12
             rm -rf data/disclosures/monthly data/parsed/monthly
           done 2>&1 | tee $GITHUB_WORKSPACE/probe/targeted-log.txt | tail -300
