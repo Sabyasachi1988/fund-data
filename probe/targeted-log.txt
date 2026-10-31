@@ -1,3 +1,51 @@
+== 2026-05 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 108,
+  "errors": [],
+== 2026-05 ppfas-mutual-fund
+  PPFAS Mutual Fund: 1 file(s) (python fetch_ppfas.py (monthly)) · saved 1/1
+  "schemes": 7,
+  "errors": [],
+== 2026-05 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 116,
+  "errors": [],
+== 2026-05 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2026-05-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (251 rows, sum 100.0)
+staged nippon_momentum50 2026-05-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2026-05-31 <- Portfolio of Kotak Multicap Fund as on 31-May-2026 (80 rows, sum 100.2)
+ref-match nippon_multicap jaccard 0.94 rows 126
+staged nippon_multicap 2026-05-31 <- NIMF-MONTHLY-PORTFOLIO-31-May-26 (125 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.95 rows 101
+staged nippon_mid 2026-05-31 <- NIMF-MONTHLY-PORTFOLIO-31-May-26 (99 rows, sum 100.0)
+staged 5
+== 2026-04 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 109,
+  "errors": [],
+== 2026-04 ppfas-mutual-fund
+  PPFAS Mutual Fund: 1 file(s) (python fetch_ppfas.py (monthly)) · saved 1/1
+  "schemes": 7,
+  "errors": [],
+== 2026-04 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 119,
+  "errors": [],
+== 2026-04 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python fetch_bandhan.py (monthly) · rejected 2 (see rejection report))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2026-04-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (253 rows, sum 100.0)
+staged nippon_momentum50 2026-04-30 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2026-04-30 <- Portfolio of Kotak Multicap Fund as on 30-Apr-2026 (80 rows, sum 100.3)
+ref-match nippon_multicap jaccard 0.97 rows 128
+staged nippon_multicap 2026-04-30 <- NIMF-MONTHLY-PORTFOLIO-30-April-26 (127 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.99 rows 102
+staged nippon_mid 2026-04-30 <- NIMF-MONTHLY-PORTFOLIO-30-April-26 (101 rows, sum 100.0)
+staged 5
 == 2026-03 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
   "schemes": 112,
@@ -14,11 +62,206 @@
   Bandhan Mutual Fund: 2 file(s) (python fetch_bandhan.py (monthly)) · saved 2/2
   "schemes": 1,
   "errors": [],
-staged nippon_small 2026-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (250 rows, sum 100.0)
-staged nippon_momentum50 2026-03-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
+staged nippon_small 2026-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (250 rows, sum 100.0)
+staged nippon_momentum50 2026-03-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
 staged kotak_multicap 2026-03-31 <- Portfolio of Kotak Multicap Fund as on 31-Mar-2026 (75 rows, sum 100.4)
-staged 3
+ref-match nippon_multicap jaccard 0.94 rows 126
+staged nippon_multicap 2026-03-31 <- NIMF-MONTHLY-PORTFOLIO-31-Mar-26 (126 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.99 rows 102
+staged nippon_mid 2026-03-31 <- NIMF-MONTHLY-PORTFOLIO-31-Mar-26 (101 rows, sum 100.0)
+staged 5
+== 2026-02 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2026-02 ppfas-mutual-fund
+  PPFAS Mutual Fund: 8 file(s) (python fetch_ppfas.py (monthly)) · saved 8/8
+  "schemes": 14,
+  "errors": [],
+== 2026-02 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 118,
+  "errors": [],
+== 2026-02 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2026-02-28 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (249 rows, sum 100.0)
+staged nippon_momentum50 2026-02-28 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2026-02-28 <- Portfolio of Kotak Multicap Fund as on 28-Feb-2026 (75 rows, sum 101.5)
+ref-match nippon_multicap jaccard 0.96 rows 128
+staged nippon_multicap 2026-02-28 <- NIMF-MONTHLY-PORTFOLIO-28-Feb-26 (127 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.98 rows 102
+staged nippon_mid 2026-02-28 <- NIMF-MONTHLY-PORTFOLIO-28-Feb-26 (101 rows, sum 100.0)
+staged 5
+== 2026-01 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2026-01 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2026-01 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 116,
+  "errors": [],
+== 2026-01 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python fetch_bandhan.py (monthly) · rejected 1 (see rejection report))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2026-01-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (240 rows, sum 100.0)
+staged nippon_momentum50 2026-01-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2026-01-31 <- Portfolio of Kotak Multicap Fund as on 31-Jan-2026 (71 rows, sum 101.3)
+ref-match nippon_multicap jaccard 0.96 rows 131
+staged nippon_multicap 2026-01-31 <- NIMF-MONTHLY-PORTFOLIO-31-Jan-26 (130 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.98 rows 102
+staged nippon_mid 2026-01-31 <- NIMF-MONTHLY-PORTFOLIO-31-Jan-26 (100 rows, sum 100.0)
+staged 5
+== 2025-12 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-12 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-12 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 114,
+  "errors": [],
+== 2025-12 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-12-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (242 rows, sum 100.0)
+staged nippon_momentum50 2025-12-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
+staged kotak_multicap 2025-12-31 <- Portfolio of Kotak Multicap Fund as on 31-Dec-2025 (70 rows, sum 101.2)
+ref-match nippon_multicap jaccard 0.97 rows 135
+staged nippon_multicap 2025-12-31 <- NIMF-MONTHLY-PORTFOLIO-31-Dec-25 (135 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.98 rows 100
+staged nippon_mid 2025-12-31 <- NIMF-MONTHLY-PORTFOLIO-31-Dec-25 (99 rows, sum 100.0)
+staged 5
+== 2025-11 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-11 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-11 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 113,
+  "errors": [],
+== 2025-11 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-11-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (237 rows, sum 100.0)
+staged nippon_momentum50 2025-11-30 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-11-30 <- Portfolio of Kotak Multicap Fund as on 30-Nov-2025 (70 rows, sum 100.8)
+ref-match nippon_multicap jaccard 0.98 rows 134
+staged nippon_multicap 2025-11-30 <- NIMF-MONTHLY-PORTFOLIO-Nov-25 (133 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.96 rows 100
+staged nippon_mid 2025-11-30 <- NIMF-MONTHLY-PORTFOLIO-Nov-25 (98 rows, sum 100.0)
+staged 5
+== 2025-10 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-10 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-10 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 111,
+  "errors": [],
+== 2025-10 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-10-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (240 rows, sum 100.0)
+staged nippon_momentum50 2025-10-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-10-31 <- Portfolio of Kotak Multicap Fund as on 31-Oct-2025 (70 rows, sum 101.3)
+ref-match nippon_multicap jaccard 0.95 rows 133
+staged nippon_multicap 2025-10-31 <- NIMF-MONTHLY-PORTFOLIO-31-Oct-25 (133 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.99 rows 99
+staged nippon_mid 2025-10-31 <- NIMF-MONTHLY-PORTFOLIO-31-Oct-25 (98 rows, sum 100.0)
+staged 5
+== 2025-09 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-09 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-09 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 109,
+  "errors": [],
+== 2025-09 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-09-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (238 rows, sum 100.0)
+staged nippon_momentum50 2025-09-30 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-09-30 <- Portfolio of Kotak Multicap Fund as on 30-Sep-2025 (70 rows, sum 101.2)
+ref-match nippon_multicap jaccard 0.95 rows 130
+staged nippon_multicap 2025-09-30 <- NIMF-MONTHLY-PORTFOLIO-30-Sep-25 (130 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.97 rows 98
+staged nippon_mid 2025-09-30 <- NIMF-MONTHLY-PORTFOLIO-30-Sep-25 (97 rows, sum 100.0)
+staged 5
+== 2025-08 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-08 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-08 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 108,
+  "errors": [],
+== 2025-08 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-08-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (237 rows, sum 100.0)
+staged nippon_momentum50 2025-08-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-08-31 <- Portfolio of Kotak Multicap Fund as on 31-Aug-2025 (73 rows, sum 102.3)
+ref-match nippon_multicap jaccard 0.97 rows 132
+staged nippon_multicap 2025-08-31 <- NIMF-MONTHLY-PORTFOLIO-31-Aug-25 (131 rows, sum 100.0)
+ref-match nippon_mid jaccard 1.00 rows 98
+staged nippon_mid 2025-08-31 <- NIMF-MONTHLY-PORTFOLIO-31-Aug-25 (96 rows, sum 100.0)
+staged 5
+== 2025-07 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 108,
+  "errors": [],
+== 2025-07 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-07 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 106,
+  "errors": [],
+== 2025-07 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-07-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (238 rows, sum 100.0)
+staged nippon_momentum50 2025-07-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-07-31 <- Portfolio of Kotak Multicap Fund as on 31-Jul-2025 (69 rows, sum 100.0)
+ref-match nippon_multicap jaccard 0.93 rows 133
+staged nippon_multicap 2025-07-31 <- NIMF-MONTHLY-PORTFOLIO-31-July-25 (133 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.99 rows 99
+staged nippon_mid 2025-07-31 <- NIMF-MONTHLY-PORTFOLIO-31-July-25 (98 rows, sum 100.0)
+staged 5
 == 2025-06 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
   "schemes": 106,
@@ -35,8 +278,127 @@ staged 3
   Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
   "schemes": 0,
   "errors": [],
-staged nippon_small 2025-06-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
-staged nippon_momentum50 2025-06-30 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
+staged nippon_small 2025-06-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (238 rows, sum 100.0)
+staged nippon_momentum50 2025-06-30 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
 staged kotak_multicap 2025-06-30 <- Portfolio of Kotak Multicap Fund as on 30-Jun-2025 (67 rows, sum 100.0)
+ref-match nippon_multicap jaccard 0.99 rows 132
+staged nippon_multicap 2025-06-30 <- NIMF-MONTHLY-PORTFOLIO-30-June-25 (132 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.99 rows 98
+staged nippon_mid 2025-06-30 <- NIMF-MONTHLY-PORTFOLIO-30-June-25 (97 rows, sum 100.0)
+staged 5
+== 2025-05 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 103,
+  "errors": [],
+== 2025-05 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-05 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 104,
+  "errors": [],
+== 2025-05 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-05-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (239 rows, sum 100.0)
+staged nippon_momentum50 2025-05-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
+staged kotak_multicap 2025-05-31 <- Portfolio of Kotak Multicap Fund as on 31-May-2025 (74 rows, sum 100.2)
+ref-match nippon_multicap jaccard 0.94 rows 132
+staged nippon_multicap 2025-05-31 <- NIMF-MONTHLY-PORTFOLIO-31-May-25 (131 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.95 rows 99
+staged nippon_mid 2025-05-31 <- NIMF-MONTHLY-PORTFOLIO-31-May-25 (97 rows, sum 100.0)
+staged 5
+== 2025-04 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 101,
+  "errors": [],
+== 2025-04 ppfas-mutual-fund
+  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
+  "schemes": 6,
+  "errors": [],
+== 2025-04 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 104,
+  "errors": [],
+== 2025-04 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-04-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (230 rows, sum 100.0)
+staged nippon_momentum50 2025-04-30 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
+staged kotak_multicap 2025-04-30 <- Portfolio of Kotak Multicap Fund as on 30-Apr-2025 (70 rows, sum 101.0)
+ref-match nippon_multicap jaccard 0.94 rows 128
+staged nippon_multicap 2025-04-30 <- NIMF-MONTHLY-PORTFOLIO-30-April-25 (127 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.96 rows 97
+staged nippon_mid 2025-04-30 <- NIMF-MONTHLY-PORTFOLIO-30-April-25 (96 rows, sum 100.0)
+staged 5
+== 2025-03 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 105,
+  "errors": [],
+== 2025-03 ppfas-mutual-fund
+  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
+  "schemes": 6,
+  "errors": [],
+== 2025-03 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 102,
+  "errors": [],
+== 2025-03 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (232 rows, sum 100.0)
+staged nippon_momentum50 2025-03-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-03-31 <- Portfolio of Kotak Multicap Fund as on 31-Mar-2025 (72 rows, sum 100.2)
+ref-match nippon_multicap jaccard 0.95 rows 126
+staged nippon_multicap 2025-03-31 <- NIMF-MONTHLY-PORTFOLIO-31-Mar-25 (125 rows, sum 100.0)
+ref-match nippon_mid jaccard 0.98 rows 97
+staged nippon_mid 2025-03-31 <- NIMF-MONTHLY-PORTFOLIO-31-Mar-25 (95 rows, sum 100.0)
+staged 5
+== 2025-02 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 105,
+  "errors": [],
+== 2025-02 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-02 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 98,
+  "errors": [],
+== 2025-02 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-02-28 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (236 rows, sum 100.0)
+staged nippon_momentum50 2025-02-28 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (53 rows, sum 100.0)
+staged kotak_multicap 2025-02-28 <- Portfolio of Kotak Multicap Fund as on 28-Feb-2025 (73 rows, sum 100.2)
+ref-match nippon_multicap jaccard 0.95 rows 122
+staged nippon_multicap 2025-02-28 <- NIMF-MONTHLY-PORTFOLIO-28-Feb-25 (122 rows, sum 100.0)
+ref-match nippon_mid jaccard 1.00 rows 97
+staged nippon_mid 2025-02-28 <- NIMF-MONTHLY-PORTFOLIO-28-Feb-25 (95 rows, sum 100.0)
+staged 5
+== 2025-01 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 104,
+  "errors": [],
+== 2025-01 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-01 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 94,
+  "errors": [],
+== 2025-01 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-01-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Pre (236 rows, sum 100.0)
+staged nippon_momentum50 2025-01-31 <- Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended  (52 rows, sum 100.0)
+staged kotak_multicap 2025-01-31 <- Portfolio of Kotak Multicap Fund as on 31-Jan-2025 (72 rows, sum 100.1)
 staged 3

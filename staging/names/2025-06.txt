@@ -214,3 +214,219 @@ ppfas- | PPFAS_Monthly_Portfolio_Report_June_30_2025 | 128
 ppfas- | PPLF_PPFAS_Monthly_Portfolio_Report_June_30_2025 | 69
 ppfas- | Parag Parikh Conservative Hybrid Fund (An open-ended hybrid scheme inv | 186
 ppfas- | PPFAS_Monthly_Portfolio_Report_June_30_2025 | 172
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 23
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 13
+nippon | Nippon India Fixed Maturity Plan - XLI - Series 8 (A Close Ended Incom | 31
+nippon | Nippon India Quarterly Interval Fund-Series 2 (A Debt Oriented Interva | 4
+nippon | Nippon India Nifty Realty Index Fund (An open-ended scheme replicating | 14
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 81
+nippon | Nippon India BSE Sensex Next 30 Index Fund (An open-ended scheme repli | 33
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 105
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 101
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 128
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 71
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 49
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 126
+nippon | NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly | 238
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 15
+nippon | Nippon India Fixed Maturity Plan - XLIII -Series 1 (A Close Ended Inco | 29
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 66
+nippon | Nippon India ETF Nifty Next 50 Junior BeES | 4
+nippon | Nippon India CRISIL - IBX AAA Financial Services - Dec 2026 Index Fund | 23
+nippon | Nippon India Overnight Fund (An open-ended debt scheme investing in ov | 12
+nippon | Nippon India Nifty Bank Index Fund(An open-ended scheme replicating/tr | 15
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 53
+nippon | Nippon India Nifty 500 Quality 50 Index Fund (An open-ended scheme rep | 52
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 132
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 18
+nippon | Nippon India ETF Gold Bees | 4
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 39
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 6
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 4
+nippon | Nippon India Fixed Maturity Plan - XLIII -Series 5 (A Close Ended Inco | 35
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 176
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 32
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 4
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 22
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 37
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 22
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 123
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 152
+nippon | Nippon India Fixed Maturity Plan - XLIV - Series 4 (A Close Ended Sche | 5
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 30
+nippon | Nippon India Nifty 500 Momentum 50 Index Fund(An open-ended scheme rep | 53
+nippon | Nippon India Income Plus Arbitrage Active Fund of Fund (An open-ended  | 5
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 73
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 38
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 149
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 47
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+nippon | NIPPON INDIA ETF NIFTY SDL APR 2026 TOP 20 EQUAL WEIGHT (An open-ended | 97
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 23
+nippon | Nippon India ETF Nifty 100 | 6
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 254
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 140
+nippon | Nippon India Nifty Alpha Low Volatility 30 Index Fund (An open-ended s | 33
+nippon | Nippon India Nifty G-Sec Sep 2027 Maturity Index Fund(An open-ended Ta | 6
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 122
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 66
+nippon | Nippon India Fixed Maturity Plan - XLV - Series 5 (A Close Ended Schem | 25
+nippon | Nippon India BSE Sensex Next 30 ETF (An open-ended scheme replicating/ | 33
+nippon | Nippon India Nifty 500 Low Volatility 50 Index Fund (An open-ended sch | 53
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 94
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 117
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 23
+nippon | Nippon India Nifty IT Index Fund(An open-ended scheme replicating/trac | 13
+nippon | Nippon India Nifty Auto Index Fund (An open-ended scheme replicating/t | 18
+nippon | Nippon India CRISIL - IBX AAA Financial Services - Jan 2028 Index Fund | 16
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 53
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+nippon | Nippon India Nifty 500 Equal Weight Index Fund(An open-ended scheme re | 503
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 29
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 103
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 4
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 122
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 53
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 72
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 88
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 49
+nippon | Nippon India Nifty AAA PSU Bond Plus SDL - Sep 2026 Maturity 50:50 Ind | 36
+nippon | Nippon India Nifty G-Sec Oct 2028 Maturity Index Fund(An open-ended Ta | 6
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 120
+nippon | Nippon India Annual Interval Fund-Series 1 (A Debt Oriented Interval S | 7
+nippon | Nippon India ETF Gold Bees | 10
+nippon | Nippon India Nifty SDL Plus G-Sec - Jun 2028 Maturity 70:30 Index Fund | 32
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 35
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 152
+nippon | Nippon India Fixed Maturity Plan - XLV - Series 4 (A Close Ended Schem | 5
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 53
+nippon | Nippon India Nifty AAA CPSE Bond Plus SDL - Apr 2027 Maturity 60:40 In | 103
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 17
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 53
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 15
+nippon | Nippon India Active Momentum Fund (An open-ended equity scheme followi | 43
+nippon | Nippon India Nifty G-Sec Jun 2036 Maturity Index Fund(An open-ended Ta | 6
+nippon | Nippon India Nifty SDL Plus G-Sec - Jun 2029 Maturity 70:30 Index Fund | 31
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 98
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 3
+nippon | Nippon India Silver ETF | 4
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 171
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 83
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 194
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 39
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 14
+nippon | Nippon India Fixed Maturity Plan - XLIV - Series 1 (A Close Ended Sche | 14
+nippon | NIMF-MONTHLY-PORTFOLIO-30-June-25 | 33
+kotak- | Portfolio of Kotak Corporate Bond Fund as on 30-Jun-2025 | 121
+kotak- | Portfolio of Kotak Focused Fund as on 30-Jun-2025 | 31
+kotak- | Portfolio of Kotak Low Duration Fund as on 30-Jun-2025 | 108
+kotak- | Portfolio of Kotak Nifty Midcap 150 ETF as on 30-Jun-2025 | 151
+kotak- | Portfolio of Kotak Banking and PSU Debt Fund as on 30-Jun-2025 | 73
+kotak- | Portfolio of KOTAK CRISIL-IBX FINANCIAL SERVICES 3-6 MONTHS DEBT INDEX | 15
+kotak- | Portfolio of Kotak Global Emerging Market Fund as on 30-Jun-2025 | 3
+kotak- | Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Ju | 52
+kotak- | Portfolio of Kotak Nifty Midcap 50 Index Fund as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Quant Fund as on 30-Jun-2025 | 64
+kotak- | Portfolio of Kotak Bond Short Term Fund as on 30-Jun-2025 | 112
+kotak- | Portfolio of Kotak Nifty AAA Bond Jun 2025 HTM Index Fund as on 30-Jun | 2
+kotak- | Portfolio of Kotak BSE Sensex ETF as on 30-Jun-2025 | 32
+kotak- | Portfolio of Kotak Nifty SDL Jul 2026 Index Fund as on 30-Jun-2025 | 13
+kotak- | Portfolio of Kotak MSCI India ETF as on 30-Jun-2025 | 160
+kotak- | Portfolio of Kotak Contra Fund as on 30-Jun-2025 | 58
+kotak- | Portfolio of Kotak Long Duration Fund as on 30-Jun-2025 | 19
+kotak- | Portfolio of Kotak Nifty 50 ETF as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Overnight Fund as on 30-Jun-2025 | 6
+kotak- | Portfolio of Kotak CRISIL- IBX AAA Bond Financial Services Index - Dec | 16
+kotak- | Portfolio of Kotak Money Market Fund as on 30-Jun-2025 | 134
+kotak- | Portfolio of Kotak Aggressive Hybrid Fund as on 30-Jun-2025 | 107
+kotak- | Portfolio of Kotak Nifty Next 50 Index Fund as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Nifty Bank ETF as on 30-Jun-2025 | 14
+kotak- | Portfolio of Kotak Income Plus Arbitrage FOF as on 30-Jun-2025 | 6
+kotak- | Portfolio of Kotak Transportation and Logistics Fund as on 30-Jun-2025 | 29
+kotak- | Portfolio of Kotak Arbitrage Fund as on 30-Jun-2025 | 464
+kotak- | Portfolio of Kotak Nifty Commodities Index Fund as on 30-Jun-2025 | 32
+kotak- | Portfolio of Kotak Nifty India Tourism Index Fund as on 30-Jun-2025 | 16
+kotak- | Portfolio of Kotak Technology Fund as on 30-Jun-2025 | 27
+kotak- | Portfolio of Kotak Small Cap Fund as on 30-Jun-2025 | 77
+kotak- | Portfolio of Kotak Large Cap Fund as on 30-Jun-2025 | 66
+kotak- | Portfolio of Kotak International REIT FOF as on 30-Jun-2025 | 3
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 6
+kotak- | Portfolio of Kotak NASDAQ 100 Fund of Fund as on 30-Jun-2025 | 3
+kotak- | Portfolio of Kotak Equity Savings Fund as on 30-Jun-2025 | 201
+kotak- | Portfolio of Kotak Silver ETF as on 30-Jun-2025 | 3
+kotak- | Portfolio of Kotak Nifty MNC ETF as on 30-Jun-2025 | 32
+kotak- | Portfolio of Kotak Nifty Top 10 Equal Weight Index Fund as on 30-Jun-2 | 12
+kotak- | Portfolio of Kotak Dynamic Bond Fund as on 30-Jun-2025 | 31
+kotak- | Portfolio of Kotak NIFTY 1D Rate Liquid ETF as on 30-Jun-2025 | 2
+kotak- | Portfolio of Kotak Floating Rate Fund as on 30-Jun-2025 | 37
+kotak- | Portfolio of Kotak Multi Asset Allocation Fund as on 30-Jun-2025 | 77
+kotak- | Portfolio of Kotak Debt Hybrid Fund as on 30-Jun-2025 | 123
+kotak- | Portfolio of Kotak Medium Term Fund as on 30-Jun-2025 | 70
+kotak- | Portfolio of Kotak Gold ETF as on 30-Jun-2025 | 4
+kotak- | Portfolio of Kotak Nifty 50 Value 20 ETF as on 30-Jun-2025 | 22
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 16
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 3
+kotak- | Portfolio of Kotak Consumption Fund as on 30-Jun-2025 | 42
+kotak- | Portfolio of Kotak Healthcare Fund as on 30-Jun-2025 | 32
+kotak- | Portfolio of Kotak Business Cycle Fund as on 30-Jun-2025 | 55
+kotak- | Portfolio of Kotak Savings Fund as on 30-Jun-2025 | 106
+kotak- | Portfolio of Kotak Credit Risk Fund as on 30-Jun-2025 | 36
+kotak- | Portfolio of Kotak Nifty G-Sec July 2033 Index Fund as on 30-Jun-2025 | 4
+kotak- | Portfolio of Kotak Nifty Midcap 50 ETF as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak BSE Housing Index Fund as on 30-Jun-2025 | 26
+kotak- | Portfolio of Kotak Nifty SDL Apr 2027 Top 12 Equal Weight Index Fund a | 60
+kotak- | Portfolio of Kotak Nifty 100 Equal Weight ETF as on 30-Jun-2025 | 101
+kotak- | Portfolio of Kotak Midcap Fund as on 30-Jun-2025 | 63
+kotak- | Portfolio of Kotak Nifty 100 Equal Weight Index Fund as on 30-Jun-2025 | 102
+kotak- | Portfolio of Kotak Nifty Smallcap 250 Index Fund as on 30-Jun-2025 | 253
+kotak- | Portfolio of Kotak BSE Sensex Index Fund as on 30-Jun-2025 | 31
+kotak- | Portfolio of Kotak Nifty SDL Plus AAA PSU Bond Jul 2028 60 - 40 Index  | 38
+kotak- | Portfolio of Kotak Manufacture In India Fund as on 30-Jun-2025 | 60
+kotak- | Portfolio of Kotak BSE PSU Index Fund as on 30-Jun-2025 | 65
+kotak- | Portfolio of Kotak Nifty 100 Low Volatility 30 ETF as on 30-Jun-2025 | 31
+kotak- | Portfolio of Kotak Nifty IT ETF as on 30-Jun-2025 | 12
+kotak- | Portfolio of Kotak Global Innovation Fund of Fund as on 30-Jun-2025 | 4
+kotak- | Portfolio of Kotak Nifty India Consumption ETF as on 30-Jun-2025 | 31
+kotak- | Portfolio of Kotak Banking and Financial Services Fund as on 30-Jun-20 | 29
+kotak- | Portfolio of Kotak Nifty 50 Index Fund as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Gold Fund as on 30-Jun-2025 | 3
+kotak- | Portfolio of Kotak Bond Fund as on 30-Jun-2025 | 56
+kotak- | Portfolio of Kotak ELSS Tax Saver Fund as on 30-Jun-2025 | 56
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 17
+kotak- | Portfolio of Kotak Nifty 200 Momentum 30 Index Fund as on 30-Jun-2025 | 32
+kotak- | Portfolio of Kotak Nifty SDL Apr 2032 Top 12 Equal Weight Index Fund a | 44
+kotak- | Portfolio of Kotak MNC Fund as on 30-Jun-2025 | 47
+kotak- | Portfolio of Kotak Nifty SDL Jul 2033 Index Fund as on 30-Jun-2025 | 16
+kotak- | Portfolio of Kotak Energy Opportunities Fund as on 30-Jun-2025 | 34
+kotak- | Portfolio of Kotak Nifty Financial Services Ex-Bank Index Fund as on 3 | 32
+kotak- | Portfolio of Kotak Nifty Alpha 50 ETF as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Infrastructure and Economic Reform Fund as on 30-Ju | 53
+kotak- | Portfolio of Kotak Flexicap Fund as on 30-Jun-2025 | 61
+kotak- | Portfolio of Kotak Multicap Fund as on 30-Jun-2025 | 67
+kotak- | Portfolio of Kotak Silver ETF Fund of Fund as on 30-Jun-2025 | 3
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 6
+kotak- | ConsolidatedSEBIPortfolioJune2025 | 4
+kotak- | Portfolio of Kotak Nifty Midcap 150 Index Fund as on 30-Jun-2025 | 152
+kotak- | Portfolio of Kotak CRISIL-IBX AAA Financial Services Index-Sep 2027 Fu | 18
+kotak- | Portfolio of Kotak Nifty PSU Bank ETF as on 30-Jun-2025 | 14
+kotak- | Portfolio of Kotak Balanced Advantage Fund as on 30-Jun-2025 | 214
+kotak- | Portfolio of Kotak Pioneer Fund as on 30-Jun-2025 | 47
+kotak- | Portfolio of Kotak Special Opportunities Fund as on 30-Jun-2025 | 43
+kotak- | Portfolio of Kotak Liquid Fund as on 30-Jun-2025 | 99
+kotak- | Portfolio of Kotak Multi Asset Allocator Fund of Fund - Dynamic as on  | 16
+kotak- | Portfolio of Kotak Gilt Fund as on 30-Jun-2025 | 55
+kotak- | Scheme | 8
+kotak- | Portfolio of Kotak Nifty 100 Low Volatility 30 Index Fund as on 30-Jun | 32
+kotak- | Portfolio of Kotak ESG Exclusionary Strategy Fund as on 30-Jun-2025 | 50
+kotak- | Portfolio of Kotak Nifty 50 Equal Weight Index Fund as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Nifty Smallcap 50 Index Fund as on 30-Jun-2025 | 52
+kotak- | Portfolio of Kotak Large & Midcap Fund as on 30-Jun-2025 | 71
+ppfas- | Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme inves | 153
+ppfas- | PPTSF_PPFAS_Monthly_Portfolio_Report_June_30_2025 | 57
+ppfas- | PPFAS_Monthly_Portfolio_Report_June_30_2025 | 128
+ppfas- | PPLF_PPFAS_Monthly_Portfolio_Report_June_30_2025 | 69
+ppfas- | Parag Parikh Conservative Hybrid Fund (An open-ended hybrid scheme inv | 186
+ppfas- | PPFAS_Monthly_Portfolio_Report_June_30_2025 | 172
