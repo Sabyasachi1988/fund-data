@@ -1,0 +1,68 @@
+== 2026-05 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 20,
+iti-mutual-fund 2026-05: schemes 19 matched 16
+== 2026-04 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 20,
+iti-mutual-fund 2026-04: schemes 19 matched 16
+== 2026-03 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 20,
+iti-mutual-fund 2026-03: schemes 18 matched 15
+== 2026-02 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2026-02: schemes 18 matched 15
+== 2026-01 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2026-01: schemes 18 matched 15
+== 2025-12 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-12: schemes 18 matched 15
+== 2025-11 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-11: schemes 18 matched 15
+== 2025-10 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-10: schemes 18 matched 15
+== 2025-09 iti-mutual-fund
+  ITI Mutual Fund: 0 file(s) (python fetch_iti.py (monthly) · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-08 iti-mutual-fund
+  ITI Mutual Fund: 0 file(s) (python fetch_iti.py (monthly) · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-07 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-07: schemes 18 matched 12
+== 2025-06 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-06: schemes 18 matched 12
+== 2025-05 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-05: schemes 18 matched 12
+== 2025-04 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-04: schemes 18 matched 12
+== 2025-03 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 19,
+iti-mutual-fund 2025-03: schemes 18 matched 12
+== 2025-02 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 18,
+iti-mutual-fund 2025-02: schemes 17 matched 11
+== 2025-01 iti-mutual-fund
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+  "schemes": 18,
+iti-mutual-fund 2025-01: schemes 17 matched 10
