@@ -1,0 +1,26 @@
+== 2026-05 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 108,
+nippon-india-mutual-fund 2026-05: schemes 104 matched 98
+== 2026-04 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 109,
+nippon-india-mutual-fund 2026-04: schemes 104 matched 98
+== 2026-03 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 112,
+nippon-india-mutual-fund 2026-03: schemes 107 matched 98
+== 2026-02 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2026-02: schemes 105 matched 96
+== 2026-01 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2026-01: schemes 106 matched 97
+== 2025-12 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2025-12: schemes 106 matched 97
+== 2025-11 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
