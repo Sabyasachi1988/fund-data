@@ -1,0 +1,63 @@
+name: full-backfill
+# One job per AMC: fetch + parse each month (newest first), turn every scheme into a cap/sector split, and attach it to a
+# fund-data portfolio id by holdings overlap (build/stage_all.py). Public repo: runner minutes are free; no artifacts are uploaded.
+on:
+  workflow_dispatch:
+    inputs:
+      periods:
+        description: "Space-separated YYYY-MM list, NEWEST FIRST (matching chains backwards from Jun 2026)"
+        required: true
+        default: "2026-05 2026-04 2026-03 2026-02 2026-01 2025-12 2025-11 2025-10 2025-09 2025-08 2025-07 2025-06 2025-05 2025-04 2025-03 2025-02 2025-01"
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        amc: ["360-one-mutual-fund", "abakkus-mutual-fund", "aditya-birla-sun-life-mutual-fund", "alphagrep-mutual-fund", "angel-one-mutual-fund", "ask-mutual-fund", "axis-mutual-fund", "bajaj-finserv-mutual-fund", "bandhan-mutual-fund", "bank-of-india-mutual-fund", "baroda-bnp-paribas-mutual-fund", "canara-robeco-mutual-fund", "capitalmind-mutual-fund", "carnelian-mutual-fund", "choice-mutual-fund", "dsp-mutual-fund", "edelweiss-mutual-fund", "franklin-templeton-mutual-fund", "groww-mutual-fund", "hdfc-mutual-fund", "helios-mutual-fund", "hsbc-mutual-fund", "icici-prudential-mutual-fund", "il-fs-mutual-fund-idf", "invesco-mutual-fund", "iti-mutual-fund", "jio-blackrock-mutual-fund", "jm-financial-mutual-fund", "kotak-mahindra-mutual-fund", "lakshya-mutual-fund", "lic-mutual-fund", "mahindra-manulife-mutual-fund", "mirae-asset-mutual-fund", "monarch-mutual-fund", "motilal-oswal-mutual-fund", "navi-mutual-fund", "nippon-india-mutual-fund", "nj-mutual-fund", "nuvama-mutual-fund", "old-bridge-mutual-fund", "pgim-india-mutual-fund", "ppfas-mutual-fund", "quant-mutual-fund", "quantum-mutual-fund", "samco-mutual-fund", "sbi-mutual-fund", "shriram-mutual-fund", "sundaram-mutual-fund", "tata-mutual-fund", "taurus-mutual-fund", "trust-mutual-fund", "unifi-mutual-fund", "union-mutual-fund", "uti-mutual-fund", "the-wealth-company-mutual-fund", "whiteoak-capital-mutual-fund", "zerodha-mutual-fund"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - name: Toolkit
+        run: |
+          git clone -q --depth 1 https://github.com/subscriptionmanager26-png/fund-disclosures /tmp/fd
+          cd /tmp/fd && python -m venv .venv && .venv/bin/pip install -q -r requirements.txt
+          (npm ci --omit=dev || npm install --omit=dev) 2>&1 | tail -1
+      - name: Seed matching references from the open archive (Jun 2026)
+        run: |
+          git clone -q --depth 1 --filter=blob:none --sparse https://github.com/kushagra-agarwal-a/fund-holdings-data /tmp/arc
+          (cd /tmp/arc && git sparse-checkout set portfolios/asof/2026-06-30)
+          python3 build/stage_all.py seed /tmp/arc/portfolios/asof/2026-06-30 /tmp/bf
+      - name: Fetch, parse, match per month
+        run: |
+          cd /tmp/fd
+          a=${{ matrix.amc }}
+          for p in ${{ inputs.periods }}; do
+            echo "== $p $a"
+            timeout 900 npm run fetch -- --type=monthly --period=$p --amc=$a 2>&1 | grep -E "file\(s\)|ERROR" | cut -c1-200 || true
+            timeout 900 npm run parse:amc -- --amc=$a --type=monthly --period=$p 2>&1 | grep -E '"schemes"|Error' | head -2 | cut -c1-200 || true
+            python3 $GITHUB_WORKSPACE/build/stage_all.py month data/parsed /tmp/bf $a 2>&1 | tail -3
+            rm -rf data/disclosures/monthly data/parsed/monthly
+          done 2>&1 | tee /tmp/bf/log.txt | tail -120
+      - name: Commit this AMC
+        if: always()
+        run: |
+          mkdir -p backfill backfill/logs
+          [ -f /tmp/bf/${{ matrix.amc }}.json ] && cp /tmp/bf/${{ matrix.amc }}.json backfill/
+          cp /tmp/bf/log.txt backfill/logs/${{ matrix.amc }}.txt || true
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backfill
+          git diff --staged --quiet && exit 0
+          git commit -qm "Backfill ${{ matrix.amc }}"
+          for i in 1 2 3 4 5 6 7 8; do git pull -q --rebase origin main && git push -q && exit 0; sleep $((RANDOM % 20 + 5)); done
+          exit 1
