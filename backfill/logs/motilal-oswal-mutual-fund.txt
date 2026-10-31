@@ -1,0 +1,25 @@
+== 2026-05 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 85,
+motilal-oswal-mutual-fund 2026-05: schemes 83 matched 75
+== 2026-04 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 84,
+motilal-oswal-mutual-fund 2026-04: schemes 81 matched 71
+== 2026-03 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 83,
+motilal-oswal-mutual-fund 2026-03: schemes 80 matched 70
+== 2026-02 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 82,
+motilal-oswal-mutual-fund 2026-02: schemes 79 matched 69
+== 2026-01 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 81,
+motilal-oswal-mutual-fund 2026-01: schemes 79 matched 69
+== 2025-12 motilal-oswal-mutual-fund
+  Motilal Oswal Mutual Fund: 1 file(s) (python fetch_motilal.py (monthly)) · saved 1/1
+  "schemes": 80,
+motilal-oswal-mutual-fund 2025-12: schemes 77 matched 67
+== 2025-11 motilal-oswal-mutual-fund
