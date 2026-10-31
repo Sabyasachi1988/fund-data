@@ -1,328 +1,3 @@
-== 2025-01 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 104,
-  "errors": [],
-== 2025-01 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-01 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 94,
-  "errors": [],
-== 2025-01 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-01-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (236 rows, sum 100.0)
-staged nippon_momentum50 2025-01-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-01-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Jan-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-01-31 <- Portfolio of Kotak Multicap Fund as on 31-Jan-2025 (72 rows, sum 100.1)
-staged ppfas_flexi 2025-01-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (95 rows, sum 100.0)
-staged 5
-== 2025-02 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 105,
-  "errors": [],
-== 2025-02 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-02 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 98,
-  "errors": [],
-== 2025-02 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-02-28 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (236 rows, sum 100.0)
-staged nippon_momentum50 2025-02-28 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2025-02-28 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 28-Feb-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-02-28 <- Portfolio of Kotak Multicap Fund as on 28-Feb-2025 (73 rows, sum 100.2)
-staged ppfas_flexi 2025-02-28 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (102 rows, sum 100.0)
-staged 5
-== 2025-03 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 105,
-  "errors": [],
-== 2025-03 ppfas-mutual-fund
-  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
-  "schemes": 6,
-  "errors": [],
-== 2025-03 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 102,
-  "errors": [],
-== 2025-03 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (232 rows, sum 100.0)
-staged nippon_momentum50 2025-03-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-03-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Mar-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-03-31 <- Portfolio of Kotak Multicap Fund as on 31-Mar-2025 (72 rows, sum 100.2)
-staged ppfas_flexi 2025-03-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (124 rows, sum 100.0)
-staged 5
-== 2025-04 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 101,
-  "errors": [],
-== 2025-04 ppfas-mutual-fund
-  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
-  "schemes": 6,
-  "errors": [],
-== 2025-04 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 104,
-  "errors": [],
-== 2025-04 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-04-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (230 rows, sum 100.0)
-staged nippon_momentum50 2025-04-30 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2025-04-30 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Apr-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-04-30 <- Portfolio of Kotak Multicap Fund as on 30-Apr-2025 (70 rows, sum 101.0)
-staged ppfas_flexi 2025-04-30 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (126 rows, sum 100.0)
-staged 5
-== 2025-05 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 103,
-  "errors": [],
-== 2025-05 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-05 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 104,
-  "errors": [],
-== 2025-05 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-05-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (239 rows, sum 100.0)
-staged nippon_momentum50 2025-05-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2025-05-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-May-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-05-31 <- Portfolio of Kotak Multicap Fund as on 31-May-2025 (74 rows, sum 100.2)
-staged ppfas_flexi 2025-05-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (142 rows, sum 100.0)
-staged 5
-== 2025-06 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 106,
-  "errors": [],
-== 2025-06 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-06 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 104,
-  "errors": [],
-== 2025-06 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-06-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
-staged nippon_momentum50 2025-06-30 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2025-06-30 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Jun-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-06-30 <- Portfolio of Kotak Multicap Fund as on 30-Jun-2025 (67 rows, sum 100.0)
-staged ppfas_flexi 2025-06-30 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (153 rows, sum 100.0)
-staged 5
-== 2025-07 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 108,
-  "errors": [],
-== 2025-07 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-07 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 106,
-  "errors": [],
-== 2025-07 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-07-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
-staged nippon_momentum50 2025-07-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-07-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Jul-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-07-31 <- Portfolio of Kotak Multicap Fund as on 31-Jul-2025 (69 rows, sum 100.0)
-staged ppfas_flexi 2025-07-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (134 rows, sum 100.0)
-staged 5
-== 2025-08 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2025-08 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-08 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 108,
-  "errors": [],
-== 2025-08 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-08-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (237 rows, sum 100.0)
-staged nippon_momentum50 2025-08-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-08-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Aug-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-08-31 <- Portfolio of Kotak Multicap Fund as on 31-Aug-2025 (73 rows, sum 102.3)
-staged ppfas_flexi 2025-08-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (133 rows, sum 100.0)
-staged 5
-== 2025-09 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2025-09 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-09 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 109,
-  "errors": [],
-== 2025-09 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-09-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
-staged nippon_momentum50 2025-09-30 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-09-30 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Sep-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-09-30 <- Portfolio of Kotak Multicap Fund as on 30-Sep-2025 (70 rows, sum 101.2)
-staged ppfas_flexi 2025-09-30 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (147 rows, sum 100.0)
-staged 5
-== 2025-10 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2025-10 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-10 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 111,
-  "errors": [],
-== 2025-10 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-10-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (240 rows, sum 100.0)
-staged nippon_momentum50 2025-10-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-10-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Oct-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-10-31 <- Portfolio of Kotak Multicap Fund as on 31-Oct-2025 (70 rows, sum 101.3)
-staged ppfas_flexi 2025-10-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (150 rows, sum 100.0)
-staged 5
-== 2025-11 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2025-11 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-11 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 113,
-  "errors": [],
-== 2025-11 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-11-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (237 rows, sum 100.0)
-staged nippon_momentum50 2025-11-30 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2025-11-30 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Nov-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-11-30 <- Portfolio of Kotak Multicap Fund as on 30-Nov-2025 (70 rows, sum 100.8)
-staged ppfas_flexi 2025-11-30 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (146 rows, sum 100.0)
-staged 5
-== 2025-12 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2025-12 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2025-12 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 114,
-  "errors": [],
-== 2025-12 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2025-12-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (242 rows, sum 100.0)
-staged nippon_momentum50 2025-12-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2025-12-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Dec-2025 (52 rows, sum 100.0)
-staged nippon_momentum50 2025-12-31 <- Portfolio of Kotak Nifty 500 Momentum 50 Index Fund as on 31-Dec-2025 (52 rows, sum 100.0)
-staged kotak_multicap 2025-12-31 <- Portfolio of Kotak Multicap Fund as on 31-Dec-2025 (70 rows, sum 101.2)
-staged ppfas_flexi 2025-12-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (149 rows, sum 100.0)
-staged 6
-== 2026-01 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2026-01 ppfas-mutual-fund
-  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
-  "schemes": 12,
-  "errors": [],
-== 2026-01 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 116,
-  "errors": [],
-== 2026-01 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python fetch_bandhan.py (monthly) · rejected 1 (see rejection report))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2026-01-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (240 rows, sum 100.0)
-staged nippon_momentum50 2026-01-31 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2026-01-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Jan-2026 (52 rows, sum 100.0)
-staged nippon_momentum50 2026-01-31 <- Portfolio of Kotak Nifty 500 Momentum 50 Index Fund as on 31-Jan-2026 (51 rows, sum 100.0)
-staged kotak_multicap 2026-01-31 <- Portfolio of Kotak Multicap Fund as on 31-Jan-2026 (71 rows, sum 101.3)
-staged ppfas_flexi 2026-01-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (146 rows, sum 100.0)
-staged 6
-== 2026-02 nippon-india-mutual-fund
-  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
-  "schemes": 110,
-  "errors": [],
-== 2026-02 ppfas-mutual-fund
-  PPFAS Mutual Fund: 8 file(s) (python fetch_ppfas.py (monthly)) · saved 8/8
-  "schemes": 14,
-  "errors": [],
-== 2026-02 kotak-mahindra-mutual-fund
-  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
-  "schemes": 118,
-  "errors": [],
-== 2026-02 bandhan-mutual-fund
-  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
-  "schemes": 0,
-  "errors": [],
-staged nippon_small 2026-02-28 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (249 rows, sum 100.0)
-staged nippon_momentum50 2026-02-28 <- Nippon India Nifty 500 Momentum 
-50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2026-02-28 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 28-Feb-2026 (52 rows, sum 100.0)
-staged nippon_momentum50 2026-02-28 <- Portfolio of Kotak Nifty 500 Momentum 50 Index Fund as on 28-Feb-2026 (51 rows, sum 100.0)
-staged kotak_multicap 2026-02-28 <- Portfolio of Kotak Multicap Fund as on 28-Feb-2026 (75 rows, sum 101.5)
-staged ppfas_flexi 2026-02-28 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (145 rows, sum 100.0)
-staged 6
 == 2026-03 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
   "schemes": 112,
@@ -342,11 +17,50 @@ staged 6
 staged nippon_small 2026-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (250 rows, sum 100.0)
 staged nippon_momentum50 2026-03-31 <- Nippon India Nifty 500 Momentum 
 50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
-staged nippon_momentum50 2026-03-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-Mar-2026 (52 rows, sum 100.0)
-staged nippon_momentum50 2026-03-31 <- Portfolio of Kotak Nifty 500 Momentum 50 Index Fund as on 31-Mar-2026 (52 rows, sum 100.0)
 staged kotak_multicap 2026-03-31 <- Portfolio of Kotak Multicap Fund as on 31-Mar-2026 (75 rows, sum 100.4)
-staged ppfas_flexi 2026-03-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (116 rows, sum 100.0)
-staged 6
+staged 3
+== 2025-06 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 106,
+  "errors": [],
+== 2025-06 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-06 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 104,
+  "errors": [],
+== 2025-06 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-06-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
+staged nippon_momentum50 2025-06-30 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
+staged kotak_multicap 2025-06-30 <- Portfolio of Kotak Multicap Fund as on 30-Jun-2025 (67 rows, sum 100.0)
+staged 3
+== 2025-01 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 104,
+  "errors": [],
+== 2025-01 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-01 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 94,
+  "errors": [],
+== 2025-01 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-01-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (236 rows, sum 100.0)
+staged nippon_momentum50 2025-01-31 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
+staged kotak_multicap 2025-01-31 <- Portfolio of Kotak Multicap Fund as on 31-Jan-2025 (72 rows, sum 100.1)
+staged 3
 == 2026-04 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
   "schemes": 109,
@@ -366,11 +80,8 @@ staged 6
 staged nippon_small 2026-04-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (253 rows, sum 100.0)
 staged nippon_momentum50 2026-04-30 <- Nippon India Nifty 500 Momentum 
 50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2026-04-30 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 30-Apr-2026 (52 rows, sum 100.0)
-staged nippon_momentum50 2026-04-30 <- Portfolio of Kotak Nifty500 Momentum 50 Index Fund as on 30-Apr-2026 (52 rows, sum 100.0)
 staged kotak_multicap 2026-04-30 <- Portfolio of Kotak Multicap Fund as on 30-Apr-2026 (80 rows, sum 100.3)
-staged ppfas_flexi 2026-04-30 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (108 rows, sum 100.0)
-staged 6
+staged 3
 == 2026-05 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
   "schemes": 108,
@@ -390,8 +101,89 @@ staged 6
 staged nippon_small 2026-05-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (251 rows, sum 100.0)
 staged nippon_momentum50 2026-05-31 <- Nippon India Nifty 500 Momentum 
 50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
-staged nippon_momentum50 2026-05-31 <- Portfolio of Kotak Nifty Midcap 150 Momentum 50 Index Fund as on 31-May-2026 (52 rows, sum 100.0)
-staged nippon_momentum50 2026-05-31 <- Portfolio of Kotak Nifty500 Momentum 50 Index Fund as on 31-May-2026 (51 rows, sum 100.0)
 staged kotak_multicap 2026-05-31 <- Portfolio of Kotak Multicap Fund as on 31-May-2026 (80 rows, sum 100.2)
-staged ppfas_flexi 2026-05-31 <- Parag Parikh Flexi Cap Fund (An open-ended dynamic equity scheme investing across large cap, mid-cap, small-cap stocks) (112 rows, sum 100.0)
-staged 6
+staged 3
+== 2026-02 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2026-02 ppfas-mutual-fund
+  PPFAS Mutual Fund: 8 file(s) (python fetch_ppfas.py (monthly)) · saved 8/8
+  "schemes": 14,
+  "errors": [],
+== 2026-02 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 118,
+  "errors": [],
+== 2026-02 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2026-02-28 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (249 rows, sum 100.0)
+staged nippon_momentum50 2026-02-28 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
+staged kotak_multicap 2026-02-28 <- Portfolio of Kotak Multicap Fund as on 28-Feb-2026 (75 rows, sum 101.5)
+staged 3
+== 2025-09 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-09 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-09 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 109,
+  "errors": [],
+== 2025-09 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-09-30 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (238 rows, sum 100.0)
+staged nippon_momentum50 2025-09-30 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
+staged kotak_multicap 2025-09-30 <- Portfolio of Kotak Multicap Fund as on 30-Sep-2025 (70 rows, sum 101.2)
+staged 3
+== 2025-12 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+  "errors": [],
+== 2025-12 ppfas-mutual-fund
+  PPFAS Mutual Fund: 7 file(s) (python fetch_ppfas.py (monthly)) · saved 7/7
+  "schemes": 12,
+  "errors": [],
+== 2025-12 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 114,
+  "errors": [],
+== 2025-12 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-12-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (242 rows, sum 100.0)
+staged nippon_momentum50 2025-12-31 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (53 rows, sum 100.0)
+staged kotak_multicap 2025-12-31 <- Portfolio of Kotak Multicap Fund as on 31-Dec-2025 (70 rows, sum 101.2)
+staged 3
+== 2025-03 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 105,
+  "errors": [],
+== 2025-03 ppfas-mutual-fund
+  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
+  "schemes": 6,
+  "errors": [],
+== 2025-03 kotak-mahindra-mutual-fund
+  Kotak Mahindra Mutual Fund: 1 file(s) (python fetch_kotak.py (monthly)) · saved 1/1
+  "schemes": 102,
+  "errors": [],
+== 2025-03 bandhan-mutual-fund
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+  "schemes": 0,
+  "errors": [],
+staged nippon_small 2025-03-31 <- NIPPON INDIA SMALL CAP FUND (An Open-Ended Equity Scheme Predominantly Investing In Small Cap Stocks) (232 rows, sum 100.0)
+staged nippon_momentum50 2025-03-31 <- Nippon India Nifty 500 Momentum 
+50 Index Fund(An open-ended scheme replicating/tracking Nifty 500 Momentum 50 Index) (52 rows, sum 100.0)
+staged kotak_multicap 2025-03-31 <- Portfolio of Kotak Multicap Fund as on 31-Mar-2025 (72 rows, sum 100.2)
+staged 3

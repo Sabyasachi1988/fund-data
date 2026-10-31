@@ -9,7 +9,7 @@ rows by year in title [('2025', 1), ('2026', 153), ('2027', 10), ('2028', 4), ('
    Presentation on Bandhan Small Cap Fund – Aug’26>Partners>Fund House>Presentation
    Fund Insights – Bandhan Small Cap Fund – Aug’26>Partners>Fund House>Presentation
 == mfapi.in NAV depth
-Parag Parikh Flexi Cap Direct Growth -> 122639 Parag Parikh Flexi Cap Fund - Direct Plan - Growth | points 3302 | first 28-05-2013 | last 29-10-2026
+Parag Parikh Flexi Cap Direct Growth -> 122639 Parag Parikh Flexi Cap Fund - Direct Plan - Growth | points 3303 | first 28-05-2013 | last 30-10-2026
 Nippon India Multi Cap Direct Growth -> 118650 Nippon India Multi Cap Fund - Direct Plan - Growth Option | points 3403 | first 02-01-2013 | last 30-10-2026
 Bandhan Small Cap Direct Growth -> 147946 BANDHAN Small Cap Fund - Direct Plan - Growth | points 1655 | first 26-02-2020 | last 30-10-2026
 Nippon India Growth Direct Growth -> 148457 Nippon India Multi Asset Allocation Fund - Direct Plan - Growth Option | points 1518 | first 31-08-2020 | last 29-10-2026
