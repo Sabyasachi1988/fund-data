@@ -1,0 +1,9 @@
+== 2026-05 invesco-mutual-fund
+  Invesco Mutual Fund: 45 file(s) (python fetch_invesco.py (monthly)) · saved 45/45
+  "schemes": 45,
+invesco-mutual-fund 2026-05: schemes 42 matched 40
+== 2026-04 invesco-mutual-fund
+  Invesco Mutual Fund: 43 file(s) (python fetch_invesco.py (monthly)) · saved 43/43
+  "schemes": 43,
+invesco-mutual-fund 2026-04: schemes 40 matched 37
+== 2026-03 invesco-mutual-fund
