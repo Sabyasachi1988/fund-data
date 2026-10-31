@@ -1,0 +1,42 @@
+== 2026-05 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 106,
+aditya-birla-sun-life-mutual-fund 2026-05: schemes 103 matched 94
+== 2026-04 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 109,
+aditya-birla-sun-life-mutual-fund 2026-04: schemes 104 matched 94
+== 2026-03 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 111,
+aditya-birla-sun-life-mutual-fund 2026-03: schemes 107 matched 94
+== 2026-02 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 110,
+aditya-birla-sun-life-mutual-fund 2026-02: schemes 107 matched 93
+== 2026-01 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 108,
+aditya-birla-sun-life-mutual-fund 2026-01: schemes 105 matched 91
+== 2025-12 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 109,
+aditya-birla-sun-life-mutual-fund 2025-12: schemes 104 matched 91
+== 2025-11 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 109,
+aditya-birla-sun-life-mutual-fund 2025-11: schemes 106 matched 91
+== 2025-10 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 110,
+aditya-birla-sun-life-mutual-fund 2025-10: schemes 106 matched 91
+== 2025-09 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 111,
+aditya-birla-sun-life-mutual-fund 2025-09: schemes 105 matched 91
+== 2025-08 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
+  "schemes": 111,
+aditya-birla-sun-life-mutual-fund 2025-08: schemes 107 matched 91
+== 2025-07 aditya-birla-sun-life-mutual-fund
+  Aditya Birla Sun Life Mutual Fund: 1 file(s) (python fetch_absl.py (monthly)) · saved 1/1
