@@ -1,0 +1,595 @@
+period 2024-06
+== fetch log (last 200 lines)
+
+> fund-disclosures@0.2.0 fetch
+> node scrapers/node/fetch-period.js --type=monthly --period=2024-06 --concurrency=3
+
+Fetch monthly 2024-06 → 2024-06-30 · 51 AMC(s) · concurrency=3
+
+→ 360-one-mutual-fund [python_ref]
+→ abakkus-mutual-fund [python_ref]
+→ aditya-birla-sun-life-mutual-fund [python_ref]
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+→ angel-one-mutual-fund [python_ref]
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_angel_one.py", line 309, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_angel_one.py", line 246, in main
+    html_text = fetch_html(ctx=ctx)
+            )
+→ axis-mutual-fund [axis_cms]
+  360 ONE Mutual Fund: 1 file(s) (python fetch_360_one.py (monthly)) · saved 1/1
+→ bajaj-finserv-mutual-fund [python_ref]
+  Bajaj Finserv Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_bajaj.py", line 264, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_bajaj.py", line 212, in main
+    for it in fetch_media_search(frag):
+              ^^)
+→ bandhan-mutual-fund [python_ref]
+  Bandhan Mutual Fund: 0 file(s) (python ok but empty (fetch_bandhan.py, monthly))
+→ bank-of-india-mutual-fund [python_ref]
+  Axis Mutual Fund: 0 file(s) (no consolidated monthly for period)
+→ baroda-bnp-paribas-mutual-fund [python_ref]
+  Baroda BNP Paribas Mutual Fund: 0 file(s) (python ok but empty (fetch_baroda_bnp.py, monthly))
+→ canara-robeco-mutual-fund [python_ref]
+  Canara Robeco Mutual Fund: 0 file(s) (python fetch_canara_robeco.py (monthly) · rejected 24 (see rejection report))
+→ capitalmind-mutual-fund [static_html]
+  Aditya Birla Sun Life Mutual Fund: ERROR terminated
+→ choice-mutual-fund [python_ref]
+  Choice Mutual Fund: 0 file(s) (python ok but empty (fetch_choice.py, monthly))
+→ dsp-mutual-fund [static_html]
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+→ edelweiss-mutual-fund [python_ref]
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/tmp/fd/scrapers/python/fetch_edelweiss.py", line 267, in <module>
+    main()
+  File "/tmp/fd/scrapers/python/fetch_edelweiss.py", line 222, in main
+    payload = fetch_menu_payload(session, args.i)
+→ franklin-templeton-mutual-fund [python_ref]
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+→ groww-mutual-fund [python_ref]
+  Franklin Templeton Mutual Fund: 1 file(s) (python fetch_franklin.py (monthly)) · saved 1/1
+→ hdfc-mutual-fund [hdfc_cms]
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+→ helios-mutual-fund [python_ref]
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+→ hsbc-mutual-fund [python_ref]
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+→ icici-prudential-mutual-fund [icici_nms]
+  HSBC Mutual Fund: 43 file(s) (python fetch_hsbc.py (monthly)) · saved 43/43
+→ il-fs-mutual-fund-idf [python_ref]
+  IL&FS Mutual Fund (IDF): 0 file(s) (python_exit_1: Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/urllib/request.py", line 1357, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/hostedtoolcache/Python)
+→ invesco-mutual-fund [python_ref]
+  ICICI Prudential Mutual Fund: ERROR The operation was aborted due to timeout
+→ iti-mutual-fund [python_ref]
+  HDFC Mutual Fund: ERROR The operation was aborted due to timeout
+→ jio-blackrock-mutual-fund [python_ref]
+  Jio BlackRock Mutual Fund: 0 file(s) (python ok but empty (fetch_jio_blackrock.py, monthly))
+→ jm-financial-mutual-fund [python_ref]
+  ITI Mutual Fund: 1 file(s) (python fetch_iti.py (monthly)) · saved 1/1
+→ kotak-mahindra-mutual-fund [python_ref]
+  Kotak Mahindra Mutual Fund: 0 file(s) (python fetch_kotak.py (monthly) · rejected 1 (see rejection report))
+→ lic-mutual-fund [python_ref]
+  Invesco Mutual Fund: ERROR The operation was aborted due to timeout
+→ mahindra-manulife-mutual-fund [python_ref]
+  JM Financial Mutual Fund: ERROR The operation was aborted due to timeout
+→ mirae-asset-mutual-fund [mirae_ajax]
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+→ motilal-oswal-mutual-fund [python_ref]
+  Motilal Oswal Mutual Fund: 0 file(s) (python ok but empty (fetch_motilal.py, monthly))
+→ navi-mutual-fund [python_ref]
+  Navi Mutual Fund: 0 file(s) (python_exit_1: Navi portfolio page blocked from this network (Cloudflare 403). Set CLOUDFLARE_ACCOUNT_ID + CLOUDFLARE_API_TOKEN for Browser Rendering, or NAVI_WP_NONCE from a browser session on navi.com.
+Underlying error: HTTP Error 403: Forbidden
+)
+→ nippon-india-mutual-fund [python_ref]
+  LIC Mutual Fund: ERROR fetch failed
+→ nj-mutual-fund [nj_downloads]
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+→ old-bridge-mutual-fund [python_ref]
+  Old Bridge Mutual Fund: 1 file(s) (python fetch_oldbridge.py (monthly)) · saved 1/1
+→ pgim-india-mutual-fund [python_ref]
+  PGIM India Mutual Fund: 0 file(s) (python fetch_pgim.py (monthly) · rejected 22 (see rejection report))
+→ ppfas-mutual-fund [python_ref]
+  PPFAS Mutual Fund: 6 file(s) (python fetch_ppfas.py (monthly)) · saved 6/6
+→ quant-mutual-fund [quant_aspx]
+  NJ Mutual Fund: 1 file(s) (nj viewfile monthly (1)) · saved 1/1
+→ quantum-mutual-fund [python_ref]
+  Quantum Mutual Fund: 0 file(s) (python ok but empty (fetch_quantum.py, monthly))
+→ samco-mutual-fund [static_html]
+  quant Mutual Fund: 0 file(s) (aspx monthly (1) · rejected 1 (see rejection report))
+→ sbi-mutual-fund [sbi_sitefinity]
+  Mirae Asset Mutual Fund: 0 file(s) (no period matches in portfolio_tab1)
+→ shriram-mutual-fund [python_ref]
+  Shriram Mutual Fund: 0 file(s) (python fetch_shriram.py (monthly) · rejected 1 (see rejection report))
+→ sundaram-mutual-fund [python_ref]
+  Sundaram Mutual Fund: 2 file(s) (python fetch_sundaram.py (monthly)) · saved 2/2
+→ tata-mutual-fund [python_ref]
+  Tata Mutual Fund: 1 file(s) (python fetch_tata.py (monthly)) · saved 1/1
+→ taurus-mutual-fund [python_ref]
+  Taurus Mutual Fund: 8 file(s) (python fetch_taurus.py (monthly)) · saved 8/8
+→ trust-mutual-fund [python_ref]
+  Trust Mutual Fund: 1 file(s) (python fetch_trust.py (monthly)) · saved 1/1
+→ unifi-mutual-fund [static_html]
+(node:2269) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  Unifi Mutual Fund: 0 file(s) (rejected 46 (see rejection report))
+→ union-mutual-fund [python_ref]
+  Union Mutual Fund: 0 file(s) (python ok but empty (fetch_union.py, monthly))
+→ uti-mutual-fund [uti_api]
+  UTI Mutual Fund: 1 file(s) (month=June) · saved 1/1
+→ the-wealth-company-mutual-fund [python_ref]
+  The Wealth Company Mutual Fund: 0 file(s) (python ok but empty (fetch_wealth_company.py, monthly))
+→ whiteoak-capital-mutual-fund [whiteoak_cms]
+  WhiteOak Capital Mutual Fund: ERROR whiteoak cms http_403
+→ zerodha-mutual-fund [static_html]
+  Samco Mutual Fund: 14 file(s) (rejected 94 (see rejection report)) · saved 14/14
+  Zerodha Mutual Fund: 9 file(s) (rejected 145 (see rejection report)) · saved 7/9
+  SBI Mutual Fund: 117 file(s) (PSYear=2024 PSMonth=June) · saved 117/117
+
+Done. ok=20 empty=24 error=7 rejected=340
+Manifest: /tmp/fd/data/probes/fetch-monthly-2024-06-30.json
+Rejections: /tmp/fd/data/probes/fetch-rejections-monthly-2024-06-30.md
+== files fetched
+220
+52M	/tmp/fd/data/disclosures
+monthly/.gitkeep
+monthly/2024-06-30/bank-of-india-mutual-fund/monthly-portfolio---30-june-2024a038c69d6c55415fa6b3d496ba70a98a.xlsx
+monthly/2024-06-30/sundaram-mutual-fund/monthlyportfolio_100724222900.xlsx
+monthly/2024-06-30/sundaram-mutual-fund/monthlyportfolio_100724223007.xlsx
+monthly/2024-06-30/groww-mutual-fund/Monthly Portfolio- June 30_ 2024.xls
+monthly/2024-06-30/nippon-india-mutual-fund/NIMF-MONTHLY-PORTFOLIO-June-24.xls
+monthly/2024-06-30/zerodha-mutual-fund/June - 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZLIQD - Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZGOLD - Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZELSS - Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZE100- Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZN250 - Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/zerodha-mutual-fund/ZE150- Monthly Portfolio June 2024.xlsx
+monthly/2024-06-30/old-bridge-mutual-fund/Monthly_Portfolio_June_2024.xlsx
+monthly/2024-06-30/iti-mutual-fund/1720515368-Monthly_Portfolio_-June_2024.xlsx
+monthly/2024-06-30/mahindra-manulife-mutual-fund/3d018dcc-b2ed-4d16-8a88-a17a751d06e8.xlsx
+monthly/2024-06-30/uti-mutual-fund/Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip
+monthly/2024-06-30/360-one-mutual-fund/360_ONE_MF_MONTHLY_PORTFOLIO_Jun2024_ab1d9cfa39.xlsx
+monthly/2024-06-30/dsp-mutual-fund/monthend-portfolio-june-2024.zip
+monthly/2024-06-30/dsp-mutual-fund/dsp-isin-debt-portfolio-as-on-30-jun-2024.xlsx
+monthly/2024-06-30/ppfas-mutual-fund/PPAF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/ppfas-mutual-fund/PPDAAF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/ppfas-mutual-fund/PPCHF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/ppfas-mutual-fund/PPLF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/ppfas-mutual-fund/PPFCF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/ppfas-mutual-fund/PPTSF_PPFAS_Monthly_Portfolio_Report_June_30_2024.xls
+monthly/2024-06-30/jm-financial-mutual-fund/Monthly Portfolio - JM Small Cap Fund - Jun 30_ 2024.xlsx
+monthly/2024-06-30/jm-financial-mutual-fund/Monthly Portfolio - JM Value Fund - Jun 30_ 2024.xlsx
+monthly/2024-06-30/franklin-templeton-mutual-fund/Monthly-Portfolio-ISIN-28-Jun-2024.xlsx
+monthly/2024-06-30/samco-mutual-fund/June2024_1720498875.xlsx
+monthly/2024-06-30/samco-mutual-fund/DetailsofVotescastduringthequarterendedJune302024_1720788851.xlsx
+monthly/2024-06-30/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_June_2024_Samco_Active_Momentum_Fund_1720422048.xlsx
+monthly/2024-06-30/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_June_2024_Samco_Special_Opportunities_Fund_1720421979.xlsx
+monthly/2024-06-30/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_June_2024_Samco_ELSS_Tax_Saver_Fund_1720422015.xlsx
+monthly/2024-06-30/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_June_2024_Samco_Dynamic_Asset_Allocation_Fund_1720421792.xlsx
+monthly/2024-06-30/samco-mutual-fund/IN_MF_MONTHLY_PORTFOLIO_June_2024_Samco_Flexi_Cap_Fund_1720421934.xlsx
+monthly/2024-06-30/trust-mutual-fund/TRUSTMF-Monthly-Portfolio-Report-as-on-30.06.2024.xls
+monthly/2024-06-30/tata-mutual-fund/Monthly Portfolio as on 30th June 2024.xlsx
+monthly/2024-06-30/lic-mutual-fund/LEBALF04-07-2024-00_20_59.xlsx
+monthly/2024-06-30/lic-mutual-fund/LEBFSF04-07-2024-00_20_59.xlsx
+monthly/2024-06-30/lic-mutual-fund/LEBADF04-07-2024-00_20_59.xlsx
+monthly/2024-06-30/lic-mutual-fund/LDINPF04-07-2024-00_20_11.xlsx
+monthly/2024-06-30/lic-mutual-fund/LEARBF04-07-2024-00_20_59.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-business-cycle-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-brazil-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-medium-duration-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-liquid-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-value-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-global-emerging-markets-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-nifty-next-50-index-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-large-cap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-multi-cap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-crisil-ibx-gilt-june-2027-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-flexi-cap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-asia-pacific-ex-japan-dividend-yield-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-dynamic-bond-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-managed-solution-india-conservative-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-overnight-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-managed-solutions-india-moderate-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-ultra-short-duration-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-managed-solutions-india-growth-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-medium-to-long-duration-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-consumption-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-conservative-hybrid-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-short-duration-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-corporate-bond-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-money-market-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-tax-saver-equity-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-midcap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-large-and-mid-cap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-elss-tax-saver-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-multi-asset-allocation-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-banking-and-psu-debt-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-crisil-ibx-50-50-gl-sdl-ap28-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-credit-risk-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-gilt-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-focused-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-aggressive-hybrid-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-balanced-advantage-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-small-cap-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-global-equity-climate-change-fund-of-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-low-duration-fund-30-jun-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-arbitrage-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-infrastructure-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-nifty-50-index-fund-30-june-2024.xlsx
+monthly/2024-06-30/hsbc-mutual-fund/hsbc-equity-savings-fund-30-june-2024.xlsx
+monthly/2024-06-30/nj-mutual-fund/Monthly-Portfolio-Disclosure-June-2024-20240709025049.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Large_Cap_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Infrastructure_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Elss_Tax_Saver_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Ethical_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Nifty50_Index_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Banking_Fin_Serv_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Mid_Cap_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/taurus-mutual-fund/Taurus_Flexi_Cap_Fund_Monthly_Portfolio_Report_Performance_June_2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-equity-minimum-variance-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-43-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-magnum-low-duration-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-53-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-contra-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-long-term-advantage-fund---series-iii-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-61-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-liquid-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-consumption-opportunities-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-long-term-advantage-fund---series-vi-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-59-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-magnum-medium-duration-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-automotive-opportunities-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-crisil-ibx-sdl-index--sept-2027-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-international-access--us-equity-fof-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-esg-exclusionary-strategy-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-credit-risk-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-floating-rate-debt-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty-50-etf-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty-bank-etf-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-magnum-comma-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty-next-50-etf-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-equity-hybrid-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-long-term-advantage-fund---series-v-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-gold-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-bse-sensex-next-50-etf-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-67-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-34-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-crisil-ibx-gilt-index--april-2029-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-long-duration-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-41-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty-1-d-rate-etf-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-49-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-55-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-42-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-46-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-64-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-66-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-bse-sensex-etf-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-multicap-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty50-equal-weight-index-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-retirement-benefit-fund---conservative-hybrid-plan-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/all-schemes-monthly-portfolio---as-on-30th-june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-58-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-44-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-large-midcap-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-magnum-children_s-benefit-fund-savings-plan-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-flexicap-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-78-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-fixed-maturity-plan-(fmp)--series-52-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-magnum-ultra-short-duration-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-corporate-bond-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-nifty-midcap-150-index-fund-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-retirement-benefit-fund---aggressive-hybrid-plan-monthly-portfolio---june-2024.xlsx
+monthly/2024-06-30/sbi-mutual-fund/sbi-retirement-benefit-fund---conservative-plan-monthly-portfolio---june-2024.xlsx
+== parse log (last 200 lines)
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Long Duration Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 6,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Silver Exchange Traded Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 2,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Silver ETF Fund of Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 2,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty 500 Value 50 Index Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 51,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty50 Equal Weight Index Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 51,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI BSE Housing Index Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 25,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Balanced Advantage Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 121,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty Midcap 150 Exchange Traded Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 151,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Innovation Fund",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 29,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty IT ETF",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 11,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty 5 yr Benchmark G-Sec ETF",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 2,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "UTI Nifty 10 yr Benchmark G-Sec ETF",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 2,
+        "source_file": "Fw_ UTIMF SCHEME PORTFOLIOS - 30.06.2024.zip",
+        "type": "monthly",
+        "period": "2024-06-30"
+      }
+    ]
+  },
+  {
+    "amc_id": "whiteoak-capital-mutual-fund",
+    "files": 0,
+    "parsed_files": 0,
+    "skipped_resume": 0,
+    "skipped_files": [],
+    "schemes": 0,
+    "holdings": 0,
+    "errors": [],
+    "schemes_detail": []
+  },
+  {
+    "amc_id": "zerodha-mutual-fund",
+    "files": 7,
+    "parsed_files": 7,
+    "skipped_resume": 0,
+    "skipped_files": [],
+    "schemes": 7,
+    "holdings": 767,
+    "errors": [],
+    "schemes_detail": [
+      {
+        "scheme": "Sheet1",
+        "shortcode": null,
+        "as_of": "2024-06-30",
+        "holdings": 0,
+        "source_file": "June - 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZE100- Monthly Portfolio June 2024",
+        "shortcode": "ZE100",
+        "as_of": "2024-06-30",
+        "holdings": 103,
+        "source_file": "ZE100- Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZE150- Monthly Portfolio June 2024",
+        "shortcode": "ZE150",
+        "as_of": "2024-06-30",
+        "holdings": 152,
+        "source_file": "ZE150- Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZELSS - Monthly Portfolio June 2024",
+        "shortcode": "ZELSS",
+        "as_of": "2024-06-30",
+        "holdings": 253,
+        "source_file": "ZELSS - Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZGOLD - Monthly Portfolio June 2024",
+        "shortcode": "ZGOLD",
+        "as_of": "2024-06-30",
+        "holdings": 4,
+        "source_file": "ZGOLD - Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZLIQD - Monthly Portfolio June 2024",
+        "shortcode": "ZILQD",
+        "as_of": "2024-06-30",
+        "holdings": 2,
+        "source_file": "ZLIQD - Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      },
+      {
+        "scheme": "ZN250 - Monthly Portfolio June 2024",
+        "shortcode": "ZN250",
+        "as_of": "2024-06-30",
+        "holdings": 253,
+        "source_file": "ZN250 - Monthly Portfolio June 2024.xlsx",
+        "type": "monthly",
+        "period": "2024-06-30"
+      }
+    ]
+  }
+]
+== parsed
+1360
+47M	/tmp/fd/data/parsed
+monthly/2024-06-30/bank-of-india-mutual-fund/YB02/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB02/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB31/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB31/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB36/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB36/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB08/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB08/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB39/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB39/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB09/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB09/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB21/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB21/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB01/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB01/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB38/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB38/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB07/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB07/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB06/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB06/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB37/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB37/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/schemes.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB33/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB33/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB04/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB04/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB35/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB35/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB26/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB26/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB32/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB32/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB34/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB34/portfolio.csv
+monthly/2024-06-30/bank-of-india-mutual-fund/YB30/portfolio.json
+monthly/2024-06-30/bank-of-india-mutual-fund/YB30/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX1/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX1/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/MIDCAP/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/MIDCAP/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPMON/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPMON/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX6/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX6/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/GLOB/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/GLOB/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPDYF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPDYF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX3/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX3/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPBAF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPBAF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX4/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX4/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SSFUND/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SSFUND/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SUNBDS/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SUNBDS/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SMMF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SMMF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX2/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX2/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SUNONF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SUNONF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX5/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTAX5/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/MULTIP/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/MULTIP/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SRURAL/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SRURAL/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTADV3/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTADV3/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SLTADV4/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SLTADV4/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/CAPEXG/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/CAPEXG/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPAHF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPAHF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPFOCUS/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPFOCUS/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SFRLTP/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SFRLTP/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SMILE/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SMILE/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPUSDF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPUSDF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPSN100/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPSN100/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPLDF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPLDF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SUNBCF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SUNBCF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/STAX/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/STAX/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SPMUCF/portfolio.json
+monthly/2024-06-30/sundaram-mutual-fund/SPMUCF/portfolio.csv
+monthly/2024-06-30/sundaram-mutual-fund/SUNFOP/portfolio.json
+sed: couldn't write 60 items to stdout: Broken pipe
+find: ‘standard output’: Broken pipe
+find: write error
