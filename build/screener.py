@@ -151,7 +151,7 @@ def main(out):
         return row, daily_delta(series)
 
     t0 = time.time()
-    with cf.ThreadPoolExecutor(max_workers=12) as ex:
+    with cf.ThreadPoolExecutor(max_workers=8) as ex:
         for i, res in enumerate(ex.map(work, cand)):
             if res is None:
                 bad += 1
