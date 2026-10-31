@@ -1,0 +1,68 @@
+== 2026-05 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-04 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-03 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-02 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-01 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-12 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-11 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-10 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-09 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-08 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-07 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-06 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-05 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-04 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-03 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-02 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-01 edelweiss-mutual-fund
+  Edelweiss Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
