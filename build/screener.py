@@ -3,7 +3,8 @@ and a weekly NAV series, so the phone can download everything once and screen/co
 
 Outputs (in OUT dir):
   screener.json.gz   {"asof","count","rows":[{c,isin,name,cat,amc,pid,nav,d,age,r:{...},roll:{...},vol,mdd,sharpe,cap:[l,m,s]}]}
-  nav.json.gz        {"w":"weekly, index = days-since-1970 // 7","f":{code:[firstWeekIndex,[nav,...]]}}
+  navd.json.gz       DAILY NAVs, delta-encoded: {"fmt":"daily-delta-1","f":{code:[d0,n0,[dayGaps...],[navDiffs...]]}}
+                     d0 = first date as days since 1970-01-01, n0 = first NAV x 10000 (int); each later point adds a day gap and a NAV diff.
 Usage: python3 build/screener.py OUT
 """
 import concurrent.futures as cf, datetime as dt, glob, gzip, json, math, os, re, statistics, sys, time, urllib.request
@@ -85,17 +86,14 @@ def metrics(series):
     return out, roll, vol, round(mdd * 100, 2), sharpe, round(age, 2)
 
 
-def weekly(series):
-    wk = {}
-    for d, n in series:
-        wk[d.toordinal() // 7] = n
-    first = min(wk)
-    last = max(wk)
-    arr, prev = [], None
-    for w in range(first, last + 1):
-        prev = wk.get(w, prev)
-        arr.append(round(prev, 4))
-    return first, arr
+EPOCH = dt.date(1970, 1, 1).toordinal()
+
+
+def daily_delta(series):
+    """series ascending [(date, nav)] -> [d0, n0, [gaps], [diffs]] (NAV in 1/10000 units, exact to 4 decimals)."""
+    days = [d.toordinal() - EPOCH for d, _ in series]
+    navs = [int(round(n * 10000)) for _, n in series]
+    return [days[0], navs[0], [days[i] - days[i - 1] for i in range(1, len(days))], [navs[i] - navs[i - 1] for i in range(1, len(navs))]]
 
 
 def main(out):
@@ -150,31 +148,31 @@ def main(out):
                "cat": (meta.get("scheme_category") or "").replace("Equity Scheme - ", "").replace("Debt Scheme - ", "").replace("Hybrid Scheme - ", "Hybrid - ").replace("Other Scheme - ", ""),
                "amc": meta.get("fund_house") or "", "pid": pid, "nav": series[-1][1], "d": series[-1][0].isoformat(),
                "age": age, "r": r, "roll": roll, "vol": vol, "mdd": mdd, "sharpe": sharpe, "cap": cap}
-        return row, weekly(series)
+        return row, daily_delta(series)
 
     t0 = time.time()
-    with cf.ThreadPoolExecutor(max_workers=8) as ex:
+    with cf.ThreadPoolExecutor(max_workers=12) as ex:
         for i, res in enumerate(ex.map(work, cand)):
             if res is None:
                 bad += 1
             else:
-                row, (w0, arr) = res
+                row, enc = res
                 rows.append(row)
-                navs[str(row["c"])] = [w0, arr]
+                navs[str(row["c"])] = enc
             if i % 200 == 0:
                 print(i, len(rows), round(time.time() - t0), "s", flush=True)
     rows.sort(key=lambda r: (r["cat"], r["name"]))
     asof = dt.date.today().isoformat()
     with gzip.open(os.path.join(out, "screener.json.gz"), "wt", compresslevel=9) as f:
         json.dump({"asof": asof, "rf": RF, "count": len(rows), "rows": rows}, f, separators=(",", ":"))
-    with gzip.open(os.path.join(out, "nav.json.gz"), "wt", compresslevel=9) as f:
-        json.dump({"asof": asof, "w": "weekly NAV, week index = days since 1970 // 7", "f": navs}, f, separators=(",", ":"))
+    with gzip.open(os.path.join(out, "navd.json.gz"), "wt", compresslevel=9) as f:
+        json.dump({"asof": asof, "fmt": "daily-delta-1", "f": navs}, f, separators=(",", ":"))
     cats = {}
     for r in rows:
         cats[r["cat"]] = cats.get(r["cat"], 0) + 1
     print("rows", len(rows), "skipped", bad)
     print(sorted(cats.items(), key=lambda kv: -kv[1])[:25])
-    for fn in ("screener.json.gz", "nav.json.gz"):
+    for fn in ("screener.json.gz", "navd.json.gz"):
         print(fn, os.path.getsize(os.path.join(out, fn)) // 1024, "KB")
 
 
