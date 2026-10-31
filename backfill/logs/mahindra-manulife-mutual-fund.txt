@@ -1,0 +1,33 @@
+== 2026-05 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 27,
+mahindra-manulife-mutual-fund 2026-05: schemes 25 matched 23
+== 2026-04 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 27,
+mahindra-manulife-mutual-fund 2026-04: schemes 25 matched 22
+== 2026-03 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 27,
+mahindra-manulife-mutual-fund 2026-03: schemes 25 matched 22
+== 2026-02 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 27,
+mahindra-manulife-mutual-fund 2026-02: schemes 25 matched 22
+== 2026-01 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 27,
+mahindra-manulife-mutual-fund 2026-01: schemes 25 matched 22
+== 2025-12 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 26,
+mahindra-manulife-mutual-fund 2025-12: schemes 24 matched 21
+== 2025-11 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 25,
+mahindra-manulife-mutual-fund 2025-11: schemes 23 matched 20
+== 2025-10 mahindra-manulife-mutual-fund
+  Mahindra Manulife Mutual Fund: 1 file(s) (python fetch_mahindra_manulife.py (monthly)) · saved 1/1
+  "schemes": 25,
+mahindra-manulife-mutual-fund 2025-10: schemes 23 matched 20
+== 2025-09 mahindra-manulife-mutual-fund
