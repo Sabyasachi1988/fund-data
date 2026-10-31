@@ -1,0 +1,68 @@
+== 2026-05 abakkus-mutual-fund
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+  "schemes": 3,
+abakkus-mutual-fund 2026-05: schemes 3 matched 2
+== 2026-04 abakkus-mutual-fund
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+  "schemes": 3,
+abakkus-mutual-fund 2026-04: schemes 3 matched 2
+== 2026-03 abakkus-mutual-fund
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+  "schemes": 3,
+abakkus-mutual-fund 2026-03: schemes 3 matched 2
+== 2026-02 abakkus-mutual-fund
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+  "schemes": 2,
+abakkus-mutual-fund 2026-02: schemes 2 matched 1
+== 2026-01 abakkus-mutual-fund
+  Abakkus Mutual Fund: 2 file(s) (python fetch_abakkus.py (monthly)) · saved 2/2
+  "schemes": 3,
+abakkus-mutual-fund 2026-01: schemes 2 matched 1
+== 2025-12 abakkus-mutual-fund
+  Abakkus Mutual Fund: 1 file(s) (python fetch_abakkus.py (monthly)) · saved 1/1
+  "schemes": 2,
+abakkus-mutual-fund 2025-12: schemes 2 matched 0
+== 2025-11 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-10 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-09 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-08 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-07 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-06 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-05 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-04 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-03 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-02 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-01 abakkus-mutual-fund
+  Abakkus Mutual Fund: 0 file(s) (python ok but empty (fetch_abakkus.py, monthly))
+  "schemes": 0,
+no usable schemes
