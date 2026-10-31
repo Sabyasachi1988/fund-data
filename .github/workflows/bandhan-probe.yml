@@ -1,0 +1,56 @@
+name: bandhan-probe
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        continue-on-error: true
+        run: |
+          mkdir -p probe/bandhan
+          python3 - <<'PY' > probe/bandhan-listing.txt 2>&1
+          import json, urllib.request, re, os
+          H = {"User-Agent": "Mozilla/5.0", "Accept": "application/json", "Referer": "https://bandhanmutual.com/statutory-disclosures/scheme-portfolios/monthly-and-half-yearly"}
+          def get(u, raw=False):
+              r = urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=120).read()
+              return r if raw else json.loads(r.decode("utf-8", "ignore"))
+          base = "https://cmsnew.bandhanmutual.com/wp-json/finance-api/v1/posts/monthly-portfolios"
+          rows = []
+          for page in range(1, 40):
+              try: d = get(f"{base}?page={page}&per_page=100")
+              except Exception as e: print("page", page, "err", e); break
+              b = d.get("data") if isinstance(d, dict) else None
+              if not b: break
+              rows += b
+          print("rows", len(rows))
+          seen = 0
+          for r in rows:
+              acf = r.get("acf_fields") or r.get("acf") or {}
+              files = acf.get("disclosure_files") or acf.get("files") or []
+              url = None
+              if files and isinstance(files[0], dict):
+                  l = files[0].get("document_link") or {}
+                  url = (l.get("url") if isinstance(l, dict) else None) or files[0].get("url")
+              t = r.get("title", "")
+              if re.search(r"small ?cap", t, re.I):
+                  print("ROW", t, "|", r.get("date"), "|", url)
+                  if url and re.search(r"(Mar|Apr|May|Jun)[a-z]*\W*(20)?26", t, re.I) and not re.search(r"index|nifty|presentation|insight|update", t, re.I) and seen < 8:
+                      try:
+                          b = get(url, True); seen += 1
+                          open("probe/bandhan/" + re.sub(r"[^\w.-]", "_", t)[:80] + os.path.splitext(url.split("?")[0])[1], "wb").write(b); print("  saved", len(b))
+                      except Exception as e: print("  dl err", e)
+          PY
+          cat probe/bandhan-listing.txt | cut -c1-220 | head -80
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add probe
+          git diff --staged --quiet || (git commit -qm "Bandhan probe" && git push)
