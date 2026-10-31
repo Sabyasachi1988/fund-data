@@ -1,0 +1,68 @@
+== 2026-05 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 24,
+bank-of-india-mutual-fund 2026-05: schemes 23 matched 19
+== 2026-04 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 24,
+bank-of-india-mutual-fund 2026-04: schemes 22 matched 19
+== 2026-03 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 24,
+bank-of-india-mutual-fund 2026-03: schemes 23 matched 19
+== 2026-02 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 24,
+bank-of-india-mutual-fund 2026-02: schemes 22 matched 18
+== 2026-01 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2026-01: schemes 22 matched 18
+== 2025-12 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2025-12: schemes 21 matched 18
+== 2025-11 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2025-11: schemes 21 matched 18
+== 2025-10 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2025-10: schemes 21 matched 18
+== 2025-09 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2025-09: schemes 21 matched 18
+== 2025-08 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 23,
+bank-of-india-mutual-fund 2025-08: schemes 21 matched 18
+== 2025-07 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-07: schemes 20 matched 17
+== 2025-06 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-06: schemes 20 matched 17
+== 2025-05 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-05: schemes 20 matched 17
+== 2025-04 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-04: schemes 20 matched 17
+== 2025-03 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-03: schemes 21 matched 17
+== 2025-02 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 22,
+bank-of-india-mutual-fund 2025-02: schemes 20 matched 17
+== 2025-01 bank-of-india-mutual-fund
+  Bank of India Mutual Fund: 1 file(s) (python fetch_boi.py (monthly)) · saved 1/1
+  "schemes": 21,
+bank-of-india-mutual-fund 2025-01: schemes 19 matched 16
