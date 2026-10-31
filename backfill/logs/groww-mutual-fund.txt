@@ -1,0 +1,68 @@
+== 2026-05 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 59,
+groww-mutual-fund 2026-05: schemes 58 matched 50
+== 2026-04 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 57,
+groww-mutual-fund 2026-04: schemes 56 matched 48
+== 2026-03 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 56,
+groww-mutual-fund 2026-03: schemes 56 matched 47
+== 2026-02 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 52,
+groww-mutual-fund 2026-02: schemes 52 matched 40
+== 2026-01 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 50,
+groww-mutual-fund 2026-01: schemes 50 matched 38
+== 2025-12 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 48,
+groww-mutual-fund 2025-12: schemes 48 matched 37
+== 2025-11 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 44,
+groww-mutual-fund 2025-11: schemes 44 matched 32
+== 2025-10 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 41,
+groww-mutual-fund 2025-10: schemes 40 matched 29
+== 2025-09 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 39,
+groww-mutual-fund 2025-09: schemes 39 matched 27
+== 2025-08 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 38,
+groww-mutual-fund 2025-08: schemes 37 matched 27
+== 2025-07 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 34,
+groww-mutual-fund 2025-07: schemes 34 matched 23
+== 2025-06 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 30,
+groww-mutual-fund 2025-06: schemes 29 matched 19
+== 2025-05 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 29,
+groww-mutual-fund 2025-05: schemes 29 matched 18
+== 2025-04 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 26,
+groww-mutual-fund 2025-04: schemes 26 matched 17
+== 2025-03 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 24,
+groww-mutual-fund 2025-03: schemes 24 matched 16
+== 2025-02 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 23,
+groww-mutual-fund 2025-02: schemes 23 matched 15
+== 2025-01 groww-mutual-fund
+  Groww Mutual Fund: 1 file(s) (python fetch_groww.py (monthly)) · saved 1/1
+  "schemes": 20,
+groww-mutual-fund 2025-01: schemes 20 matched 11
