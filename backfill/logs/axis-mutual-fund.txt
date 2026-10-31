@@ -1,0 +1,68 @@
+== 2026-05 axis-mutual-fund
+  Axis Mutual Fund: 1 file(s) (www cms consolidated monthly) · saved 1/1
+  "schemes": 88,
+axis-mutual-fund 2026-05: schemes 82 matched 75
+== 2026-04 axis-mutual-fund
+  Axis Mutual Fund: 1 file(s) (www cms consolidated monthly) · saved 1/1
+  "schemes": 89,
+axis-mutual-fund 2026-04: schemes 83 matched 75
+== 2026-03 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2026-02 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2026-01 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-12 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-11 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-10 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-09 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-08 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-07 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (no consolidated monthly for period)
+  "schemes": 0,
+no usable schemes
+== 2025-06 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-05 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-04 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-03 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-02 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-01 axis-mutual-fund
+  Axis Mutual Fund: 0 file(s) (www cms consolidated monthly · rejected 1 (see rejection report))
+  "schemes": 0,
+no usable schemes
