@@ -1,0 +1,68 @@
+== 2026-05 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-04 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-03 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-02 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2026-01 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-12 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-11 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-10 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-09 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-08 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-07 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-06 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-05 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-04 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-03 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-02 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
+== 2025-01 helios-mutual-fund
+  Helios Mutual Fund: 0 file(s) (python ok but empty (fetch_helios.py, monthly))
+  "schemes": 0,
+no usable schemes
