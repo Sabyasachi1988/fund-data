@@ -1,0 +1,68 @@
+== 2026-05 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-04 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-03 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-02 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2026-01 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-12 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-11 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-10 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-09 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-08 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-07 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-06 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-05 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-04 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-03 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-02 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
+== 2025-01 angel-one-mutual-fund
+  Angel One Mutual Fund: 0 file(s) (python_exit_1: Traceback (most recent call last):
+  "schemes": 0,
+no usable schemes
