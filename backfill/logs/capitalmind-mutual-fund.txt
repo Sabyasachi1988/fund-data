@@ -1,0 +1,68 @@
+== 2026-05 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 4 file(s) (rejected 3 (see rejection report)) · saved 4/4
+  "schemes": 4,
+capitalmind-mutual-fund 2026-05: schemes 3 matched 2
+== 2026-04 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 4 file(s) (rejected 3 (see rejection report)) · saved 4/4
+  "schemes": 4,
+capitalmind-mutual-fund 2026-04: schemes 3 matched 1
+== 2026-03 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 4 file(s) (rejected 3 (see rejection report)) · saved 4/4
+  "schemes": 4,
+capitalmind-mutual-fund 2026-03: schemes 3 matched 1
+== 2026-02 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 2,
+capitalmind-mutual-fund 2026-02: schemes 2 matched 0
+== 2026-01 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 1,
+capitalmind-mutual-fund 2026-01: schemes 1 matched 0
+== 2025-12 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 2,
+capitalmind-mutual-fund 2025-12: schemes 2 matched 0
+== 2025-11 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 3 file(s) (rejected 3 (see rejection report)) · saved 3/3
+  "schemes": 3,
+capitalmind-mutual-fund 2025-11: schemes 3 matched 0
+== 2025-10 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 1,
+capitalmind-mutual-fund 2025-10: schemes 1 matched 0
+== 2025-09 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 1,
+capitalmind-mutual-fund 2025-09: schemes 1 matched 0
+== 2025-08 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 1,
+capitalmind-mutual-fund 2025-08: schemes 1 matched 0
+== 2025-07 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-06 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-05 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-04 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-03 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-02 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 0 file(s) (rejected 3 (see rejection report))
+  "schemes": 0,
+no usable schemes
+== 2025-01 capitalmind-mutual-fund
+  Capitalmind Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 1,
+capitalmind-mutual-fund 2025-01: schemes 1 matched 0
