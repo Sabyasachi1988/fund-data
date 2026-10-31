@@ -1,0 +1,29 @@
+== 2026-05 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 13 file(s) (python fetch_jm_financial.py (monthly)) · saved 13/13
+  "schemes": 13,
+jm-financial-mutual-fund 2026-05: schemes 12 matched 12
+== 2026-04 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 14 file(s) (python fetch_jm_financial.py (monthly)) · saved 14/14
+  "schemes": 14,
+jm-financial-mutual-fund 2026-04: schemes 13 matched 13
+== 2026-03 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+  "schemes": 16,
+jm-financial-mutual-fund 2026-03: schemes 15 matched 14
+== 2026-02 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+  "schemes": 16,
+jm-financial-mutual-fund 2026-02: schemes 15 matched 14
+== 2026-01 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+  "schemes": 16,
+jm-financial-mutual-fund 2026-01: schemes 15 matched 14
+== 2025-12 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+  "schemes": 16,
+jm-financial-mutual-fund 2025-12: schemes 15 matched 14
+== 2025-11 jm-financial-mutual-fund
+  JM Financial Mutual Fund: 16 file(s) (python fetch_jm_financial.py (monthly)) · saved 16/16
+  "schemes": 16,
+jm-financial-mutual-fund 2025-11: schemes 15 matched 14
+== 2025-10 jm-financial-mutual-fund
