@@ -34,7 +34,8 @@ jobs:
         continue-on-error: true
         run: |
           cd /tmp/fd
-          npm run fetch -- --type=monthly --period=${{ inputs.period }} 2>&1 | tail -150
+          npm run fetch -- --type=monthly --period=${{ inputs.period }} > /tmp/fetch.log 2>&1 || true
+          tail -150 /tmp/fetch.log
           echo "--- files fetched:"
           find data/disclosures -type f | wc -l
           find data/disclosures -type f | head -80
@@ -43,8 +44,24 @@ jobs:
         continue-on-error: true
         run: |
           cd /tmp/fd
-          npm run parse:amc -- --type=monthly --period=${{ inputs.period }} 2>&1 | tail -150
+          npm run parse:amc -- --type=monthly --period=${{ inputs.period }} > /tmp/parse.log 2>&1 || true
+          tail -150 /tmp/parse.log
           echo "--- parsed:"
           find data/parsed -type f | wc -l
           du -sh data/parsed
           find data/parsed -type f | head -40
+      - name: Save summary to repo
+        if: always()
+        run: |
+          mkdir -p probe
+          {
+            echo "period ${{ inputs.period }}"
+            echo "== fetch log (last 200 lines)"; tail -200 /tmp/fetch.log || true
+            echo "== files fetched"; find /tmp/fd/data/disclosures -type f | wc -l; du -sh /tmp/fd/data/disclosures || true
+            find /tmp/fd/data/disclosures -type f | sed 's#/tmp/fd/data/disclosures/##' | head -150
+            echo "== parse log (last 200 lines)"; tail -200 /tmp/parse.log || true
+            echo "== parsed"; find /tmp/fd/data/parsed -type f | wc -l; du -sh /tmp/fd/data/parsed || true
+            find /tmp/fd/data/parsed -type f | sed 's#/tmp/fd/data/parsed/##' | head -100
+          } > probe/${{ inputs.period }}.txt 2>&1
+          git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add probe && git commit -qm "Probe result ${{ inputs.period }}" && git push
