@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       max-parallel: 20
       matrix:
-        amc: ["360-one-mutual-fund", "abakkus-mutual-fund", "aditya-birla-sun-life-mutual-fund", "alphagrep-mutual-fund", "angel-one-mutual-fund", "ask-mutual-fund", "axis-mutual-fund", "bajaj-finserv-mutual-fund", "bandhan-mutual-fund", "bank-of-india-mutual-fund", "baroda-bnp-paribas-mutual-fund", "canara-robeco-mutual-fund", "capitalmind-mutual-fund", "carnelian-mutual-fund", "choice-mutual-fund", "dsp-mutual-fund", "edelweiss-mutual-fund", "franklin-templeton-mutual-fund", "groww-mutual-fund", "hdfc-mutual-fund", "helios-mutual-fund", "hsbc-mutual-fund", "icici-prudential-mutual-fund", "il-fs-mutual-fund-idf", "invesco-mutual-fund", "iti-mutual-fund", "jio-blackrock-mutual-fund", "jm-financial-mutual-fund", "kotak-mahindra-mutual-fund", "lakshya-mutual-fund", "lic-mutual-fund", "mahindra-manulife-mutual-fund", "mirae-asset-mutual-fund", "monarch-mutual-fund", "motilal-oswal-mutual-fund", "navi-mutual-fund", "nippon-india-mutual-fund", "nj-mutual-fund", "nuvama-mutual-fund", "old-bridge-mutual-fund", "pgim-india-mutual-fund", "ppfas-mutual-fund", "quant-mutual-fund", "quantum-mutual-fund", "samco-mutual-fund", "sbi-mutual-fund", "shriram-mutual-fund", "sundaram-mutual-fund", "tata-mutual-fund", "taurus-mutual-fund", "trust-mutual-fund", "unifi-mutual-fund", "union-mutual-fund", "uti-mutual-fund", "the-wealth-company-mutual-fund", "whiteoak-capital-mutual-fund", "zerodha-mutual-fund"]
+        amc: ["nippon-india-mutual-fund"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
