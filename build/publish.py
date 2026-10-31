@@ -39,6 +39,7 @@ def backfill(months, names):
 
 
 NOISE = re.compile(r"\b(index|etf|fund|fof|funds|direct|regular|growth|plan|bees|junior|idcw|option|the|of|and|exchange|traded|open|ended|scheme|tracking|passive)\b")
+FOF = re.compile(r"\b(fof|fund of funds?)\b", re.I)
 IDX = re.compile(r"\b((?:nifty|sensex|bse|s p|msci|nasdaq)[a-z0-9 ]*)")
 
 
@@ -66,7 +67,7 @@ def proxy(months, cat):
             groups.setdefault(k, []).append(pid)
     n = 0
     for k, pids in groups.items():
-        donors = [p for p in pids if p in months]
+        donors = [p for p in pids if p in months and not FOF.search(cat[p].get("name") or "")]
         if not donors:
             continue
         for pid in pids:
@@ -74,8 +75,14 @@ def proxy(months, cat):
                 if dpid == pid:
                     continue
                 slot = months.setdefault(pid, {})
+                fof = bool(FOF.search(cat[pid].get("name") or ""))
                 for mk, rec in months[dpid].items():
-                    if mk not in slot and not rec.get("e"):
+                    if rec.get("e"):
+                        continue
+                    own = slot.get(mk)
+                    # an index fund-of-funds holds one unit line (the underlying ETF/fund) so its own split is ~100% "other":
+                    # look through to the tracked index instead
+                    if own is None or (fof and own["s"][7] >= 90):
                         slot[mk] = {"s": rec["s"], "x": rec["x"], "e": 1, "px": dpid}
                         n += 1
     print("proxied fund-months:", n)
