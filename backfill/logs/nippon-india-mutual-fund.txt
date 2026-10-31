@@ -24,3 +24,45 @@ nippon-india-mutual-fund 2026-01: schemes 106 matched 97
 nippon-india-mutual-fund 2025-12: schemes 106 matched 97
 == 2025-11 nippon-india-mutual-fund
   Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2025-11: schemes 106 matched 96
+== 2025-10 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2025-10: schemes 106 matched 95
+== 2025-09 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2025-09: schemes 105 matched 95
+== 2025-08 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 110,
+nippon-india-mutual-fund 2025-08: schemes 106 matched 95
+== 2025-07 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 108,
+nippon-india-mutual-fund 2025-07: schemes 104 matched 92
+== 2025-06 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 106,
+nippon-india-mutual-fund 2025-06: schemes 103 matched 92
+== 2025-05 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 103,
+nippon-india-mutual-fund 2025-05: schemes 100 matched 89
+== 2025-04 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 101,
+nippon-india-mutual-fund 2025-04: schemes 98 matched 87
+== 2025-03 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 105,
+nippon-india-mutual-fund 2025-03: schemes 96 matched 85
+== 2025-02 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 105,
+nippon-india-mutual-fund 2025-02: schemes 96 matched 84
+== 2025-01 nippon-india-mutual-fund
+  Nippon India Mutual Fund: 1 file(s) (python fetch_nippon.py (monthly)) · saved 1/1
+  "schemes": 104,
+nippon-india-mutual-fund 2025-01: schemes 97 matched 84
