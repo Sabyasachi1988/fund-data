@@ -1,0 +1,68 @@
+== 2026-05 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 113,
+dsp-mutual-fund 2026-05: schemes 82 matched 77
+== 2026-04 dsp-mutual-fund
+  DSP Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 89,
+dsp-mutual-fund 2026-04: schemes 82 matched 76
+== 2026-03 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 114,
+dsp-mutual-fund 2026-03: schemes 80 matched 73
+== 2026-02 dsp-mutual-fund
+  DSP Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 87,
+dsp-mutual-fund 2026-02: schemes 81 matched 73
+== 2026-01 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 112,
+dsp-mutual-fund 2026-01: schemes 79 matched 71
+== 2025-12 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 110,
+dsp-mutual-fund 2025-12: schemes 76 matched 68
+== 2025-11 dsp-mutual-fund
+  DSP Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 80,
+dsp-mutual-fund 2025-11: schemes 74 matched 65
+== 2025-10 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 105,
+dsp-mutual-fund 2025-10: schemes 73 matched 64
+== 2025-09 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 104,
+dsp-mutual-fund 2025-09: schemes 71 matched 62
+== 2025-08 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 104,
+dsp-mutual-fund 2025-08: schemes 71 matched 62
+== 2025-07 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 103,
+dsp-mutual-fund 2025-07: schemes 70 matched 61
+== 2025-06 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 103,
+dsp-mutual-fund 2025-06: schemes 70 matched 61
+== 2025-05 dsp-mutual-fund
+  DSP Mutual Fund: 1 file(s) (rejected 3 (see rejection report)) · saved 1/1
+  "schemes": 75,
+dsp-mutual-fund 2025-05: schemes 68 matched 59
+== 2025-04 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 100,
+dsp-mutual-fund 2025-04: schemes 67 matched 58
+== 2025-03 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 100,
+dsp-mutual-fund 2025-03: schemes 67 matched 58
+== 2025-02 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 98,
+dsp-mutual-fund 2025-02: schemes 66 matched 55
+== 2025-01 dsp-mutual-fund
+  DSP Mutual Fund: 2 file(s) (rejected 3 (see rejection report)) · saved 2/2
+  "schemes": 98,
+dsp-mutual-fund 2025-01: schemes 66 matched 55
