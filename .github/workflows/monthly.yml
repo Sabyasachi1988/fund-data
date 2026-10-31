@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install openpyxl
+      - run: python3 build/isin_map.py
       - run: build/sync_archive.sh
       - run: python3 build/publish.py
       - name: Commit

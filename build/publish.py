@@ -139,6 +139,14 @@ def main():
         if pid in months:
             for m in c.get("members", []):
                 codes[str(m)] = pid
+    # ISIN -> portfolio id, so ETFs and anything missing from mfapi still resolve (data/isin_codes.json from build/isin_map.py)
+    ip = os.path.join(ROOT, "data/isin_codes.json")
+    if os.path.exists(ip):
+        im = {i: codes[c] for i, c in load(ip).items() if c in codes}
+        isj = json.dumps(im, separators=(",", ":"), sort_keys=True)
+        open(os.path.join(out, "isin.json"), "w").write(isj)
+        h.update(isj.encode())
+        print("isin.json", len(im))
     open(os.path.join(out, "codes.json"), "w").write(json.dumps(codes, separators=(",", ":"), sort_keys=True))
     allm = sorted({m for ms in months.values() for m in ms})
     man = {"version": f"{latest}.{h.hexdigest()[:8]}", "latest": latest, "funds": len(months), "months": len(allm)}
