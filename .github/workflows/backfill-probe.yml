@@ -1,0 +1,50 @@
+name: backfill-probe
+# Probe: fetch and parse one past month of AMC portfolio disclosures with the open fund-disclosures toolkit
+# (MIT) and report how many AMCs/files/schemes came through. Public repo: runner minutes are free.
+# No Actions artifacts are uploaded; results are written to the job log and to probe/<period>.json.
+on:
+  workflow_dispatch:
+    inputs:
+      period:
+        description: "Month to probe, YYYY-MM"
+        required: true
+        default: "2025-12"
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Get toolkit
+        run: |
+          git clone -q --depth 1 https://github.com/subscriptionmanager26-png/fund-disclosures /tmp/fd
+          cd /tmp/fd
+          python -m venv .venv
+          .venv/bin/pip install -q -r requirements.txt
+          (npm ci --omit=dev || npm install --omit=dev) 2>&1 | tail -2
+      - name: Fetch
+        continue-on-error: true
+        run: |
+          cd /tmp/fd
+          npm run fetch -- --type=monthly --period=${{ inputs.period }} 2>&1 | tail -150
+          echo "--- files fetched:"
+          find data/disclosures -type f | wc -l
+          find data/disclosures -type f | head -80
+          du -sh data/disclosures
+      - name: Parse
+        continue-on-error: true
+        run: |
+          cd /tmp/fd
+          npm run parse:amc -- --type=monthly --period=${{ inputs.period }} 2>&1 | tail -150
+          echo "--- parsed:"
+          find data/parsed -type f | wc -l
+          du -sh data/parsed
+          find data/parsed -type f | head -40
