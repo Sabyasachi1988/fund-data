@@ -12,9 +12,9 @@ TARGETS = [
     ("kotak_multicap", r"kotak multi ?cap"),
     ("nippon_multicap", r"nippon india multi ?cap"),
     ("bandhan_small", r"bandhan small ?cap"),
-    ("nippon_mid", r"nippon india (growth|mid ?cap|growth mid cap)"),
+    ("nippon_mid", r"nippon india (growth|mid ?cap)"),
     ("nippon_small", r"nippon india small ?cap"),
-    ("nippon_momentum50", r"momentum 50|momentum50"),
+    ("nippon_momentum50", r"nippon india nifty ?500 momentum"),
 ]
 CASH = re.compile(r"treps|tri-?party|reverse repo|net current|net receivable|receivable|payable|cash|margin|cblo", re.I)
 RATING = re.compile(r"\b(AAA|AA|A1|SOV|ICRA|CRISIL|CARE|FITCH|IND\s?A|UNRATED)\b", re.I)
@@ -56,7 +56,10 @@ def main(parsed, out):
         d = json.load(open(f))
         m = d["meta"]
         name = m.get("scheme_name") or ""
-        key = next((k for k, rx in TARGETS if re.search(rx, name, re.I)), None)
+        if re.search(r"nippon|bandhan|multi", name, re.I):
+            os.makedirs(os.path.join(out, "names"), exist_ok=True)
+            open(os.path.join(out, "names", f.split("/monthly/")[1][:7] + ".txt"), "a").write(" ".join(name.split())[:110] + "\n")
+        key = None if re.search(r"index|etf|nifty ?(mid|small|next)|large|fof|fund of", name, re.I) and not re.search(r"momentum", name, re.I) else next((k for k, rx in TARGETS if re.search(rx, name, re.I)), None)
         if not key:
             continue
         rows = []
