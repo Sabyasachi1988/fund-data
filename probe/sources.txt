@@ -1,0 +1,19 @@
+== Bandhan monthly-portfolios listing
+rows 390
+rows by year in title [('2025', 1), ('2026', 153), ('2027', 10), ('2028', 4), ('2032', 8)]
+   Quarterly Update on Bandhan Small Cap Fund – Sep’26>Partners>Fund House>Presentation
+   Presentation on Bandhan Small Cap Fund – Sep’26>Partners>Fund House>Presentation
+   Fund Insights – Bandhan Small Cap Fund – Sep’26>Partners>Fund House>Presentation
+   Monthly and Half-yearly - Bandhan Nifty Smallcap 250 Index Fund 30 September 2026
+   Monthly and Half-yearly - Bandhan Small Cap Fund 30 September 2026
+   Presentation on Bandhan Small Cap Fund – Aug’26>Partners>Fund House>Presentation
+   Fund Insights – Bandhan Small Cap Fund – Aug’26>Partners>Fund House>Presentation
+== mfapi.in NAV depth
+Parag Parikh Flexi Cap Direct Growth -> 122639 Parag Parikh Flexi Cap Fund - Direct Plan - Growth | points 3302 | first 28-05-2013 | last 29-10-2026
+Nippon India Multi Cap Direct Growth -> 118650 Nippon India Multi Cap Fund - Direct Plan - Growth Option | points 3403 | first 02-01-2013 | last 30-10-2026
+Bandhan Small Cap Direct Growth -> 147946 BANDHAN Small Cap Fund - Direct Plan - Growth | points 1655 | first 26-02-2020 | last 30-10-2026
+Nippon India Growth Direct Growth -> 148457 Nippon India Multi Asset Allocation Fund - Direct Plan - Growth Option | points 1518 | first 31-08-2020 | last 29-10-2026
+Nippon India Growth Direct Growth -> 134923 Nippon India US Equity Opportunities Fund - Direct Plan - Growth Option | points 2685 | first 28-07-2015 | last 29-10-2026
+Nippon India Small Cap Direct Growth -> 118778 Nippon India Small Cap Fund - Direct Plan - Growth Option | points 3402 | first 02-01-2013 | last 30-10-2026
+Momentum 50 Direct Growth -> 153736 Aditya Birla Sun Life BSE 500 Momentum 50 Index Fund - Direct Plan - GROWTH | points 300 | first 11-08-2025 | last 30-10-2026
+Momentum 50 Direct Growth -> 153453 Groww Nifty 500 Momentum 50 ETF FOF - Direct Plan - Growth | points 375 | first 25-04-2025 | last 30-10-2026
