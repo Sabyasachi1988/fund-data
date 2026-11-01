@@ -11,8 +11,6 @@ jobs:
           curl -sS -L -A "$UA" https://www.amfiindia.com/aum-data/average-aum -o page.html
           grep -oE '/_next/static/chunks/[A-Za-z0-9_./-]+\.js' page.html | sort -u > chunks.txt
           while read c; do curl -sS -A "$UA" "https://www.amfiindia.com$c" -o "$(echo $c | tr '/' '_')" ; done < chunks.txt
-          echo "--- periods ctx"
-          grep -ohE '.{700}Failed to fetch periods.{50}' *.js | head -1
           B=https://www.amfiindia.com/api
-          echo "--- fy list"; curl -sS -m 60 -A "$UA" "$B/average-aum-fundwise" | head -c 700; echo
-          echo "--- schemewise fy list"; curl -sS -m 60 -A "$UA" "$B/average-aum-schemewise?strType=Categorywise&MF_ID=0" | head -c 700; echo
+          for u in "average-aum-fundwise?fyId=1" "average-aum-schemewise?strType=Categorywise&fyId=1&MF_ID=0"; do echo "== $u"; curl -sS -m 60 -A "$UA" "$B/$u" | head -c 800; echo; done
+          grep -ohE '.{400}Failed to fetch periods' *.js | head -1
