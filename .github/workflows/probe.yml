@@ -12,7 +12,10 @@ jobs:
           grep -oE '/_next/static/chunks/[A-Za-z0-9_./-]+\.js' page.html | sort -u > chunks.txt
           wc -l chunks.txt
           while read c; do curl -sS -A "$UA" "https://www.amfiindia.com$c" -o "$(echo $c | tr '/' '_')" ; done < chunks.txt
-          echo "--- api-ish strings in chunks"
-          grep -ohE '"[^"]{0,80}(/api/|api\.|amfiapi|/ter|TER|expense|Expense)[^"]{0,100}"' *.js | sort -u | head -80
-          echo "--- in page html"
-          grep -ohE '[A-Za-z0-9_.:/-]*(api|Api)[A-Za-z0-9_./?=&-]*' page.html | sort -u | head -40
+          echo "--- context"
+          grep -ohE '.{600}populate-te-rdata-revised.{700}' *.js | head -3
+          echo "--- month ctx"
+          grep -ohE '.{300}populate-ter-month.{300}' *.js | head -2
+          echo "--- tries"
+          B=https://www.amfiindia.com/api
+          for u in "populate-ter-month?year=2026" "populate-te-rdata-revised?MF_ID=3&strCat=-1&strType=-1&MonthTER=10-2026" "populate-te-rdata-revised?MF_ID=-1" ; do echo "== $u"; curl -sS -m 60 -A "$UA" "$B/$u" | head -c 700; echo; done
