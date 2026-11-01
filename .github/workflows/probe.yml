@@ -4,17 +4,13 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: find AMFI TER api
+      - name: find AMFI AUM api
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
           mkdir -p /tmp/a && cd /tmp/a
-          curl -sS -L -A "$UA" https://www.amfiindia.com/ter-of-mf-schemes -o page.html
+          curl -sS -L -A "$UA" https://www.amfiindia.com/aum-data/average-aum -o page.html
           grep -oE '/_next/static/chunks/[A-Za-z0-9_./-]+\.js' page.html | sort -u > chunks.txt
-          wc -l chunks.txt
           while read c; do curl -sS -A "$UA" "https://www.amfiindia.com$c" -o "$(echo $c | tr '/' '_')" ; done < chunks.txt
-          B=https://www.amfiindia.com/api
-          for m in 11-2026 10-2026; do for t in -1 1 2 3; do echo "== Month=$m type=$t"; curl -sS -m 120 -A "$UA" "$B/populate-te-rdata-revised?MF_ID=All&Month=$m&strCat=-1&strType=$t&page=1&pageSize=2" | head -c 1800; echo; done; done
-          echo "== big page"; curl -sS -m 180 -A "$UA" "$B/populate-te-rdata-revised?MF_ID=All&Month=10-2026&strCat=-1&strType=-1&page=1&pageSize=5000" -o big.json -w "%{http_code} %{size_download}\n"; python3 -c "import json;d=json.load(open('big.json'));print(d[0]['data']['meta'] if isinstance(d,list) else d.get('meta'))" || head -c 300 big.json
-          echo "== AUM probes"
-          for u in "https://www.amfiindia.com/api/populate-aum-month?year=2026-2027" "https://www.amfiindia.com/api/average-aum-schemewise" "https://www.amfiindia.com/modules/AverageAUMSchemeWise"; do echo "-- $u"; curl -sS -m 60 -A "$UA" "$u" | head -c 400; echo; done
-          curl -sS -L -A "$UA" https://www.amfiindia.com/sitemap -o sm.html; grep -oiE 'href="[^"]*(aum|average)[^"]*"' sm.html | sort -u | head
+          grep -ohE '.{500}/api/average-aum.{700}' *.js | head -3
+          echo "--- other api strings"
+          grep -ohE '"/api/[A-Za-z0-9_./?=&-]*' *.js | sort -u
