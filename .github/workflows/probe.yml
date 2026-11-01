@@ -1,0 +1,15 @@
+name: probe
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: probe AMFI
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+          for u in https://www.amfiindia.com/ter-of-mf-schemes https://www.amfiindia.com/modules/TotalExpenseRatio https://www.amfiindia.com/spages/NAVAll.txt https://www.amfiindia.com/research-information/aum-data/average-aum https://portal.amfiindia.com/spages/NAVAll.txt; do
+            echo "=== $u"; curl -sS -L -m 40 -A "$UA" -o /tmp/p.html -w "%{http_code} %{size_download} %{content_type}\n" "$u" || true
+            head -c 300 /tmp/p.html | tr '\n' ' '; echo
+            grep -oE "(https?:)?//[A-Za-z0-9./_-]*(api|ter|aum|TER|AUM)[A-Za-z0-9./_?=&%-]*" /tmp/p.html | sort -u | head -30
+            grep -oE "src=\"[^\"]+\.js[^\"]*\"" /tmp/p.html | head -20
+          done
