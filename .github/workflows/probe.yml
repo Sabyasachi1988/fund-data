@@ -4,21 +4,5 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: find AMFI AUM api
-        run: |
-          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"
-          mkdir -p /tmp/a && cd /tmp/a
-          curl -sS -L -A "$UA" https://www.amfiindia.com/aum-data/average-aum -o page.html
-          grep -oE '/_next/static/chunks/[A-Za-z0-9_./-]+\.js' page.html | sort -u > chunks.txt
-          while read c; do curl -sS -A "$UA" "https://www.amfiindia.com$c" -o "$(echo $c | tr '/' '_')" ; done < chunks.txt
-          B=https://www.amfiindia.com/api
-          curl -sS -m 120 -A "$UA" "$B/average-aum-schemewise?strType=Categorywise&fyId=1&periodId=1&MF_ID=0" -o aum.json -w "%{http_code} %{size_download}\n"
-          head -c 1500 aum.json; echo
-          python3 - <<'P'
-import json
-d=json.load(open('aum.json'))
-print(type(d), list(d.keys()) if isinstance(d,dict) else len(d))
-dd=d.get('data')
-print(type(dd), len(dd) if dd is not None else None)
-if isinstance(dd,list) and dd: print(json.dumps(dd[0])[:600]); print(json.dumps(dd[len(dd)//2])[:600])
-P
+      - uses: actions/checkout@v4
+      - run: python3 build/probe_aum.py
