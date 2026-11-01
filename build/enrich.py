@@ -12,14 +12,16 @@ EPOCH = dt.date(1970, 1, 1).toordinal()
 API = "https://www.amfiindia.com/api"
 
 
-def get(url, tries=4):
+def get(url, tries=8):
+    err = None
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"})
             return json.loads(urllib.request.urlopen(req, timeout=120).read().decode("utf-8", "ignore"))
         except Exception as e:
             err = e
-            time.sleep(2 * (i + 1))
+            # AMFI rate-limits (HTTP 429): back off harder each time
+            time.sleep((8 if "429" in str(e) else 2) * (i + 1))
     print("GET failed", url, err, flush=True)
     return None
 
@@ -51,8 +53,15 @@ def fetch_ter():
         pages = meta["pageCount"]
         print("TER", m, "rows", meta["total"], "pages", pages, flush=True)
         results = [first]
-        with cf.ThreadPoolExecutor(max_workers=6) as ex:
+        with cf.ThreadPoolExecutor(max_workers=3) as ex:
             results += list(ex.map(page, [(m, p) for p in range(2, pages + 1)]))
+        missing = [p for p, res in zip(range(2, pages + 1), results[1:]) if res is None]
+        print("TER", m, "pages missing after first pass:", len(missing), flush=True)
+        for p in missing:  # second pass, one at a time
+            time.sleep(3)
+            res = page((m, p))
+            if res is not None:
+                results[p - 1] = res
         for res in results:
             for r in (res or {}).get("data", []) or []:
                 try:
