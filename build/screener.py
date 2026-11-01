@@ -107,6 +107,12 @@ def main(out):
         l = n.lower()
         if "direct" in l and "growth" in l and not re.search(r"idcw|dividend|bonus|payout|segregated|fmp|fixed (term|maturity)|interval|capital protection", l):
             cand.append((s["schemeCode"], n))
+    seen, uniq = set(), []
+    for c, n in cand:  # the mfapi list can repeat a scheme code; keep one
+        if c not in seen:
+            seen.add(c)
+            uniq.append((c, n))
+    cand = uniq
     print("candidates", len(cand), flush=True)
     # published cap mix for funds we have
     codes = json.load(open(os.path.join(ROOT, "pub/codes.json")))
