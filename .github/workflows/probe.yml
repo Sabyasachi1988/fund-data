@@ -12,5 +12,13 @@ jobs:
           grep -oE '/_next/static/chunks/[A-Za-z0-9_./-]+\.js' page.html | sort -u > chunks.txt
           while read c; do curl -sS -A "$UA" "https://www.amfiindia.com$c" -o "$(echo $c | tr '/' '_')" ; done < chunks.txt
           B=https://www.amfiindia.com/api
-          for u in "average-aum-fundwise?fyId=1" "average-aum-schemewise?strType=Categorywise&fyId=1&MF_ID=0"; do echo "== $u"; curl -sS -m 60 -A "$UA" "$B/$u" | head -c 800; echo; done
-          grep -ohE '.{400}Failed to fetch periods' *.js | head -1
+          curl -sS -m 120 -A "$UA" "$B/average-aum-schemewise?strType=Categorywise&fyId=1&periodId=1&MF_ID=0" -o aum.json -w "%{http_code} %{size_download}\n"
+          head -c 1500 aum.json; echo
+          python3 - <<'P'
+import json
+d=json.load(open('aum.json'))
+print(type(d), list(d.keys()) if isinstance(d,dict) else len(d))
+dd=d.get('data')
+print(type(dd), len(dd) if dd is not None else None)
+if isinstance(dd,list) and dd: print(json.dumps(dd[0])[:600]); print(json.dumps(dd[len(dd)//2])[:600])
+P
