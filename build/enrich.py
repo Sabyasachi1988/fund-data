@@ -44,8 +44,6 @@ def fetch_ter():
     for d in months:
         m = f"{d.month:02d}-{d.year}"
         first = page((m, 1))
-        if not first or not first[0:1] and not isinstance(first, dict):
-            pass
         meta = (first or {}).get("meta") if isinstance(first, dict) else None
         if not meta:
             print("TER: no data for", m, flush=True)
@@ -176,7 +174,11 @@ def main(d):
         bundle = json.load(f)
     with gzip.open(os.path.join(d, "navd.json.gz"), "rt") as f:
         navs = json.load(f)["f"]
-    rows = bundle["rows"]
+    best = {}
+    for r in bundle["rows"]:  # the published bundle may still hold repeated scheme codes; keep the freshest of each
+        if r["c"] not in best or r.get("d", "") >= best[r["c"]].get("d", ""):
+            best[r["c"]] = r
+    rows = bundle["rows"] = sorted(best.values(), key=lambda r: (r["cat"], r["name"]))
     print("rows", len(rows), flush=True)
 
     # NAV-derived
