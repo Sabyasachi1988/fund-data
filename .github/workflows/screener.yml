@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 build/screener.py /tmp/screener
+      - run: python3 build/enrich.py /tmp/screener
       - name: Publish release assets
         env:
           GH_TOKEN: ${{ github.token }}
