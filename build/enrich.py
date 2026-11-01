@@ -33,6 +33,76 @@ def norm(name):
     return re.sub(r"[^a-z0-9]", "", s)
 
 
+# ---------------------------------------------------------------- categories and peer groups
+def canon(raw):
+    """One spelling per fund category (AMFI/mfapi use several for the same thing)."""
+    s0 = (raw or "").strip()
+    l = s0.lower()
+    if not s0:
+        return "Other"
+    if l.startswith("index funds"):
+        return "Debt Index Funds" if "debt" in l else "Index Funds"
+    if "etf" in l or l.startswith("exchange traded"):
+        return "Gold ETF" if "gold" in l else "Silver ETF" if "silver" in l else "Debt ETF" if "debt" in l else "Other ETFs" if "other" in l else "Equity ETF"
+    if "overseas" in l and "fund" in l or l.startswith("fof overseas"):
+        return "FoF Overseas"
+    if l.startswith("fund of funds") or l.startswith("fof domestic"):
+        return "FoF Domestic"
+    if "sectoral" in l or "thematic" in l:
+        return "Sectoral / Thematic"
+    t = re.sub(r"^(income/debt oriented schemes|equity schemes?|debt schemes?|hybrid schemes?|solution oriented schemes?( \*\*)?|other schemes?)\s*-\s*", "", l)
+    t = re.sub(r"^hybrid\s*-\s*", "", t).strip()
+    rules = [
+        ("balanced advantage", "Balanced Advantage / Dynamic Asset Allocation"), ("dynamic asset allocation", "Balanced Advantage / Dynamic Asset Allocation"),
+        ("retirement", "Retirement Fund"), ("children", "Children's Fund"), ("life cycle", "Life Cycle Fund"),
+        ("elss", "ELSS"), ("ultra short", "Ultra Short Duration Fund"), ("medium to long", "Medium to Long Duration Fund"),
+        ("medium term", "Medium Duration Fund"), ("medium duration", "Medium Duration Fund"), ("long term", "Long Duration Fund"),
+        ("short term", "Short Duration Fund"), ("short duration", "Short Duration Fund"), ("dynamic term", "Dynamic Bond"), ("dynamic bond", "Dynamic Bond"),
+        ("floating", "Floater Fund"), ("banking and psu", "Banking and PSU Fund"), ("constant maturity", "Gilt Fund with 10-year Constant Duration"),
+        ("gilt", "Gilt Fund"), ("corporate bond", "Corporate Bond Fund"), ("credit risk", "Credit Risk Fund"), ("money market", "Money Market Fund"),
+        ("liquid", "Liquid Fund"), ("overnight", "Overnight Fund"), ("balanced hybrid", "Balanced Hybrid Fund"), ("conservative hybrid", "Conservative Hybrid Fund"),
+        ("aggressive hybrid", "Aggressive Hybrid Fund"), ("equity savings", "Equity Savings Fund"), ("multi asset", "Multi Asset Allocation Fund"),
+        ("arbitrage", "Arbitrage Fund"), ("contra", "Contra Fund"),
+    ]
+    for key, label in rules:
+        if key in t:
+            return label
+    return t.title().replace("&", "&") if t.islower() else t
+
+
+THEMES = [
+    (r"bank|financial|finserv|\bbfsi\b|insurance", "Banking and Financial Services"), (r"pharma|health|medic", "Pharma and Healthcare"),
+    (r"tech|\bit\b|digital|software|internet", "Technology"), (r"infra|construction|real estate|housing", "Infrastructure and Real Estate"),
+    (r"consum|fmcg|retail|lifestyle", "Consumption"), (r"\bpsu\b|public sector", "PSU"), (r"manufactur|make in india|industrial", "Manufacturing"),
+    (r"energy|power|oil|gas|utilit", "Energy and Power"), (r"\bauto|mobility|transport|logistic", "Auto and Transport"), (r"defen[cs]e|aerospace", "Defence"),
+    (r"\besg\b|sustain|green|climate", "ESG"), (r"innovation|new age|emerging|disrupt|business cycle|opportunit", "Innovation and Opportunities"),
+    (r"commodit|metal|material|mining|chemical", "Commodities and Materials"), (r"global|international|world|china|us |nasdaq", "International themes"),
+]
+INDEX_DROP = r"\b(index|fund|funds|direct|plan|growth|option|idcw|dividend|etf|fof|of|the|india|nse|bse|tri|scheme|an|open|ended|passive)\b"
+
+
+def peer_key(row):
+    c = canon(row.get("cat"))
+    name = (row.get("name") or "").lower()
+    if c in ("Index Funds", "Debt Index Funds"):
+        n = name.replace("&", "and")
+        for w in re.split(r"\s+", (row.get("amc") or "").lower().replace("mutual fund", "").replace("mf", "").strip()):
+            if w:
+                n = re.sub(r"\b" + re.escape(w) + r"\b", " ", n)
+        n = re.sub(INDEX_DROP, " ", n)
+        n = re.sub(r"[^a-z0-9 ]", " ", n)
+        n = re.sub(r"\s+", " ", n).strip()
+        if not n:
+            return c
+        return ("Debt index: " if c == "Debt Index Funds" else "Index: ") + n.title()
+    if c == "Sectoral / Thematic":
+        for pat, label in THEMES:
+            if re.search(pat, name):
+                return "Theme: " + label
+        return "Theme: Other"
+    return c
+
+
 # ---------------------------------------------------------------- expense ratio
 def fetch_ter():
     today = dt.date.today()
@@ -188,14 +258,18 @@ def main(d):
         if r["c"] not in best or r.get("d", "") >= best[r["c"]].get("d", ""):
             best[r["c"]] = r
     rows = bundle["rows"] = sorted(best.values(), key=lambda r: (r["cat"], r["name"]))
+    print("rows deduped", len(rows), flush=True)
     print("rows", len(rows), flush=True)
 
     # NAV-derived
     by_cat = {}
     for r in rows:
+        r["cat0"] = r.get("cat0") or r["cat"]  # keep the source spelling once
+        r["cat"] = canon(r["cat0"])
+        r["peer"] = peer_key({"cat": r["cat0"], "name": r["name"], "amc": r.get("amc")})
         e = navs.get(str(r["c"]))
         if e:
-            by_cat.setdefault(r["cat"], {})[r["c"]] = month_end(decode(e))
+            by_cat.setdefault(r["peer"], {})[r["c"]] = month_end(decode(e))
     extra = {}
     for cat, members in by_cat.items():
         if len(members) >= 5:
@@ -225,7 +299,12 @@ def main(d):
         print("  largest:", r["name"], r["aum"], "cr", flush=True)
     low = [r["name"] for r in rows if "ter" not in r][:15]
     print("  sample TER unmatched:", low, flush=True)
-    bundle["fields"] = 2
+    cats = {}
+    for r in rows:
+        cats[r["peer"]] = cats.get(r["peer"], 0) + 1
+    print("peer groups", len(cats), "with >=5 funds:", sum(1 for v in cats.values() if v >= 5), flush=True)
+    print("  biggest:", sorted(cats.items(), key=lambda kv: -kv[1])[:25], flush=True)
+    bundle["fields"] = 3
     with gzip.open(os.path.join(d, "screener.json.gz"), "wt", compresslevel=9) as f:
         json.dump(bundle, f, separators=(",", ":"))
     print("done", round(time.time() - t0), "s", flush=True)
