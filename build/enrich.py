@@ -189,8 +189,11 @@ def fetch_ter():
 # ---------------------------------------------------------------- AUM
 def plan_free(name):
     """Scheme name with plan/option words removed, so Direct, Regular and IDCW variants of one scheme share a key."""
-    n = re.sub(r"\b(direct|regular|retail|institutional|growth|idcw|dividend|payout|reinvestment|bonus|option|plan|plans|annual|monthly|quarterly|weekly|daily|fortnightly)\b", " ", name.lower().replace("&", "and"))
+    n = re.sub(r"\b(direct|regular|retail|institutional|growth|idcw|dividend|payout|reinvestment|bonus|option|plan|plans|annual|monthly|quarterly|weekly|daily|fortnightly|fund|funds)\b", " ", name.lower().replace("&", "and"))
     return re.sub(r"[^a-z0-9]", "", n)
+
+
+AUM_ROWS = {}
 
 
 def fetch_aum():
@@ -203,7 +206,7 @@ def fetch_aum():
             groups = (d or {}).get("data") or []
             if not groups:
                 continue
-            by_code, by_base = {}, {}
+            by_code, by_base, by_n = {}, {}, {}
             for g in groups:
                 for s in g.get("schemes", []):
                     a = s.get("AverageAumForTheMonth") or {}
@@ -211,7 +214,9 @@ def fetch_aum():
                     base = (g.get("Mfname", "") + "|" + plan_free(s.get("SchemeNAVName", "")))
                     by_code[int(s["AMFI_Code"])] = base
                     by_base[base] = by_base.get(base, 0.0) + v
+                    by_n[base] = by_n.get(base, 0) + 1
             print("AUM period", y["financial_year"], p["period"], "schemes", len(by_code), flush=True)
+            AUM_ROWS.update(by_n)
             return by_code, by_base
     print("AUM: nothing found", flush=True)
     return {}, {}
@@ -363,6 +368,8 @@ def main(d):
             if ro and (ro[2] > 400 or ro[1] < -95):
                 r["roll"][lab] = None
     print("NAV series cleaned:", fixed, flush=True)
+    one = [r["name"] for r in rows if r.get("aum") and AUM_ROWS.get(by_code.get(int(r["c"]))) == 1]
+    print("AUM from a single AMFI row (possible Direct-only match):", len(one), one[:40], flush=True)
     print(f"TER matched {matched_t}/{len(rows)}  AUM matched {matched_a}/{len(rows)}", flush=True)
     top = sorted((r for r in rows if r.get("aum")), key=lambda r: -r["aum"])[:5]
     for r in top:
