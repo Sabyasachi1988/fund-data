@@ -187,6 +187,12 @@ def fetch_ter():
 
 
 # ---------------------------------------------------------------- AUM
+def plan_free(name):
+    """Scheme name with plan/option words removed, so Direct, Regular and IDCW variants of one scheme share a key."""
+    n = re.sub(r"\b(direct|regular|retail|institutional|growth|idcw|dividend|payout|reinvestment|bonus|option|plan|plans|annual|monthly|quarterly|weekly|daily|fortnightly)\b", " ", name.lower().replace("&", "and"))
+    return re.sub(r"[^a-z0-9]", "", n)
+
+
 def fetch_aum():
     fy = get(f"{API}/average-aum-fundwise")
     years = (fy or {}).get("data") or []
@@ -202,7 +208,7 @@ def fetch_aum():
                 for s in g.get("schemes", []):
                     a = s.get("AverageAumForTheMonth") or {}
                     v = sum(float(x or 0) for x in a.values())
-                    base = (g.get("Mfname", "") + "|" + norm(s.get("SchemeNAVName", "")))
+                    base = (g.get("Mfname", "") + "|" + plan_free(s.get("SchemeNAVName", "")))
                     by_code[int(s["AMFI_Code"])] = base
                     by_base[base] = by_base.get(base, 0.0) + v
             print("AUM period", y["financial_year"], p["period"], "schemes", len(by_code), flush=True)
@@ -337,7 +343,7 @@ def main(d):
             matched_t += 1
         base = by_code.get(int(r["c"]))
         if base is None:
-            base = next((b for b in by_base if b.endswith("|" + key) and b.split("|")[0].split()[0].lower() == (r.get("amc") or "x").split()[0].lower()), None)
+            base = next((b for b in by_base if b.endswith("|" + plan_free(r["name"])) and b.split("|")[0].split()[0].lower() == (r.get("amc") or "x").split()[0].lower()), None)
         if base is not None and base in by_base:
             r["aum"] = round(by_base[base] / 100.0, 1)  # AMFI reports Rs lakh -> Rs crore
             matched_a += 1
