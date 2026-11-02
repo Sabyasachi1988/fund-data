@@ -81,6 +81,42 @@ THEMES = [
 INDEX_DROP = r"\b(index|fund|funds|direct|plan|growth|option|idcw|dividend|etf|fof|of|the|india|nse|bse|tri|scheme|an|open|ended|passive)\b"
 
 
+
+def clean(series):
+    """Fix NAV-feed glitches: one-off spikes are dropped; permanent re-bases (face-value changes such as 100 -> 1000)
+    are removed by scaling the earlier history. Returns (series, changed)."""
+    pts = list(series)
+    changed = False
+    i = 1
+    while i < len(pts):
+        a, b = pts[i - 1][1], pts[i][1]
+        if a > 0 and (b / a > 2.5 or b / a < 0.4):
+            changed = True
+            ratio = b / a
+            back = next((j for j in range(i + 1, min(i + 6, len(pts))) if 0.8 < pts[j][1] / a < 1.25), None)
+            if back is not None:  # spike: drop the bad points
+                del pts[i:back]
+                continue
+            pts[:i] = [(d, v * ratio) for d, v in pts[:i]]
+        i += 1
+    return pts, changed
+
+
+NO_RISK = ("Overnight Fund", "Liquid Fund", "Ultra Short Duration Fund", "Money Market Fund", "Low Duration Fund", "Debt ETF",
+           "Arbitrage Fund")
+
+
+def fof_peer(name, cat):
+    n = name.lower()
+    for pat, label in (("gold", "FoF: Gold"), ("silver", "FoF: Silver"), (r"fang|nasdaq|s&p 500|us equity|world|global|international|overseas|china|japan|europe|emerging", "FoF: International"),
+                       (r"debt|bond|gilt|liquid|income|credit|duration|short term|corporate|target maturity|\bsdl\b|psu", "FoF: Debt"),
+                       (r"hybrid|balanced|asset allocation|multi asset|arbitrage|equity savings", "FoF: Hybrid / Multi-asset"),
+                       ("elss|tax", "FoF: Equity")):
+        if re.search(pat, n):
+            return label
+    return "FoF: Equity"
+
+
 def peer_key(row):
     c = canon(row.get("cat"))
     name = (row.get("name") or "").lower()
@@ -100,6 +136,8 @@ def peer_key(row):
             if re.search(pat, name):
                 return "Theme: " + label
         return "Theme: Other"
+    if c == "FoF Domestic":
+        return fof_peer(name, c)
     return c
 
 
@@ -263,13 +301,23 @@ def main(d):
 
     # NAV-derived
     by_cat = {}
+    fixed = 0
+    import screener as scr
     for r in rows:
         r["cat0"] = r.get("cat0") or r["cat"]  # keep the source spelling once
         r["cat"] = canon(r["cat0"])
         r["peer"] = peer_key({"cat": r["cat0"], "name": r["name"], "amc": r.get("amc")})
         e = navs.get(str(r["c"]))
         if e:
-            by_cat.setdefault(r["peer"], {})[r["c"]] = month_end(decode(e))
+            ser, changed = clean(decode(e))
+            if changed:
+                fixed += 1
+                sr = [(dt.date.fromordinal(d + EPOCH), v) for d, v in ser]
+                m = scr.metrics(sr)
+                r["r"], r["roll"], r["vol"], r["mdd"], r["sharpe"], r["age"] = m
+                navs[str(r["c"])] = scr.daily_delta(sr)
+                print("  cleaned NAV glitch:", r["name"], flush=True)
+            by_cat.setdefault(r["peer"], {})[r["c"]] = month_end(ser)
     extra = {}
     for cat, members in by_cat.items():
         if len(members) >= 5:
@@ -293,6 +341,22 @@ def main(d):
         if base is not None and base in by_base:
             r["aum"] = round(by_base[base] / 100.0, 1)  # AMFI reports Rs lakh -> Rs crore
             matched_a += 1
+    for r in rows:
+        if r["cat"] in NO_RISK:  # a fixed 6.5% risk-free rate makes these meaningless for cash-like funds
+            for k in ("sharpe", "sortino", "alpha", "beta", "upc", "dnc"):
+                r.pop(k, None)
+            r["sharpe"] = None
+            r["cap"] = r.get("cap")
+        for k in ("upc", "dnc"):
+            if k in r and not (-50 <= r[k] <= 300):
+                r.pop(k)
+        if r.get("sharpe") is not None and abs(r["sharpe"]) > 10:
+            r["sharpe"] = None
+        for lab in ("1y", "3y", "5y"):
+            ro = (r.get("roll") or {}).get(lab)
+            if ro and (ro[2] > 400 or ro[1] < -95):
+                r["roll"][lab] = None
+    print("NAV series cleaned:", fixed, flush=True)
     print(f"TER matched {matched_t}/{len(rows)}  AUM matched {matched_a}/{len(rows)}", flush=True)
     top = sorted((r for r in rows if r.get("aum")), key=lambda r: -r["aum"])[:5]
     for r in top:
@@ -305,6 +369,12 @@ def main(d):
     print("peer groups", len(cats), "with >=5 funds:", sum(1 for v in cats.values() if v >= 5), flush=True)
     print("  biggest:", sorted(cats.items(), key=lambda kv: -kv[1])[:25], flush=True)
     bundle["fields"] = 3
+    if fixed:
+        with gzip.open(os.path.join(d, "navd.json.gz"), "rt") as f:
+            nb = json.load(f)
+        nb["f"] = navs
+        with gzip.open(os.path.join(d, "navd.json.gz"), "wt", compresslevel=9) as f:
+            json.dump(nb, f, separators=(",", ":"))
     with gzip.open(os.path.join(d, "screener.json.gz"), "wt", compresslevel=9) as f:
         json.dump(bundle, f, separators=(",", ":"))
     print("done", round(time.time() - t0), "s", flush=True)

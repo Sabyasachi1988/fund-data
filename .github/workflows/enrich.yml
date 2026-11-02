@@ -22,4 +22,4 @@ jobs:
       - name: Publish
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload screener /tmp/screener/screener.json.gz --clobber
+        run: gh release upload screener /tmp/screener/screener.json.gz /tmp/screener/navd.json.gz --clobber
