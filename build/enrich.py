@@ -369,6 +369,7 @@ def main(d):
     print("peer groups", len(cats), "with >=5 funds:", sum(1 for v in cats.values() if v >= 5), flush=True)
     print("  biggest:", sorted(cats.items(), key=lambda kv: -kv[1])[:25], flush=True)
     bundle["fields"] = 3
+    bundle["v"] = 4
     if fixed:
         with gzip.open(os.path.join(d, "navd.json.gz"), "rt") as f:
             nb = json.load(f)
