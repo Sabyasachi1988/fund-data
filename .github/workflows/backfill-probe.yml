@@ -68,4 +68,4 @@ jobs:
             find /tmp/fd/data/parsed -type f | sed 's#/tmp/fd/data/parsed/##' | head -100
           } > probe/${{ inputs.period }}-c${{ inputs.concurrency }}.txt 2>&1
           git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add probe && git commit -qm "Probe result ${{ inputs.period }}" && git push
+          python3 tools/privacy_scan.py && git add probe && git commit -qm "Probe result ${{ inputs.period }}" && git push

@@ -1,0 +1,13 @@
+name: privacy-scan
+# Public repo: fail if any tracked file contains PAN-like numbers, emails or long account/phone numbers.
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/privacy_scan.py

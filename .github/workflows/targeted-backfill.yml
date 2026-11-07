@@ -86,6 +86,8 @@ jobs:
             python3 $GITHUB_WORKSPACE/build/stage_target.py data/parsed $GITHUB_WORKSPACE/staging 2>&1 | tail -12
             rm -rf data/disclosures/monthly data/parsed/monthly
           done 2>&1 | tee $GITHUB_WORKSPACE/probe/targeted-log.txt | tail -300
+      - name: Privacy scan (blocks the commit if personal data is found)
+        run: python3 tools/privacy_scan.py
       - name: Commit staged data
         if: always()
         run: |

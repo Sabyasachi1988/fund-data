@@ -49,6 +49,8 @@ jobs:
             python3 $GITHUB_WORKSPACE/build/stage_all.py month data/parsed /tmp/bf $a 2>&1 | tail -3
             rm -rf data/disclosures/monthly data/parsed/monthly
           done 2>&1 | tee /tmp/bf/log.txt | tail -120
+      - name: Privacy scan (blocks the commit if personal data is found)
+        run: python3 tools/privacy_scan.py
       - name: Commit this AMC
         if: always()
         run: |

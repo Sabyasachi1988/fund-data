@@ -48,6 +48,8 @@ jobs:
                       except Exception as e: print("  dl err", e)
           PY
           cat probe/bandhan-listing.txt | cut -c1-220 | head -80
+      - name: Privacy scan (blocks the commit if personal data is found)
+        run: python3 tools/privacy_scan.py
       - name: Commit
         if: always()
         run: |

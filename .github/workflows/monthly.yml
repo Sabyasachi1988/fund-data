@@ -23,6 +23,8 @@ jobs:
       - run: python3 build/isin_map.py
       - run: build/sync_archive.sh
       - run: python3 build/publish.py
+      - name: Privacy scan (blocks the commit if personal data is found)
+        run: python3 tools/privacy_scan.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
