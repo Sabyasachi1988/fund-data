@@ -117,6 +117,7 @@ def main(out):
     # published cap mix for funds we have
     codes = json.load(open(os.path.join(ROOT, "pub/codes.json")))
     latest_cap = {}
+    latest_full = {}  # pid -> (full 8-part split, month)
 
     def cap_for(code):
         pid = codes.get(str(code))
@@ -125,8 +126,10 @@ def main(out):
         if pid not in latest_cap:
             try:
                 d = json.load(open(os.path.join(ROOT, "pub/funds", pid + ".json")))["months"]
-                m = d[sorted(d)[-1]]["s"]
+                mk = sorted(d)[-1]
+                m = d[mk]["s"]
                 latest_cap[pid] = [m[0], m[1], m[2]]
+                latest_full[pid] = ([float(x) for x in m[:8]], mk)
             except Exception:
                 latest_cap[pid] = None
         return pid, latest_cap[pid]
@@ -154,6 +157,9 @@ def main(out):
                "cat": (meta.get("scheme_category") or "").replace("Equity Scheme - ", "").replace("Debt Scheme - ", "").replace("Hybrid Scheme - ", "Hybrid - ").replace("Other Scheme - ", ""),
                "amc": meta.get("fund_house") or "", "pid": pid, "nav": series[-1][1], "d": series[-1][0].isoformat(),
                "age": age, "r": r, "roll": roll, "vol": vol, "mdd": mdd, "sharpe": sharpe, "cap": cap}
+        if pid in latest_full:
+            # full split [large, mid, small, unclassified, foreign, debt, cash, other] and the disclosure month it is from
+            row["s8"], row["sm"] = latest_full[pid]
         return row, daily_delta(series)
 
     t0 = time.time()
