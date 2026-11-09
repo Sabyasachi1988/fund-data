@@ -1,0 +1,37 @@
+name: lookthrough
+# One-off rebuild of the recent month-end splits with look-through for funds of funds (their fund-unit holdings are
+# replaced by the underlying funds' own splits). Shares the "monthly" concurrency group so it never overlaps the
+# monthly job. Uploads no Actions artifacts.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: monthly
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install openpyxl
+      - run: python3 build/isin_map.py
+      - name: Fetch the recent month-end portfolios
+        run: |
+          git clone -q --depth 1 --filter=blob:none --sparse https://github.com/kushagra-agarwal-a/fund-holdings-data /tmp/arc
+          cd /tmp/arc
+          git sparse-checkout set portfolios/asof/2026-06-30 portfolios/asof/2026-07-31 portfolios/asof/2026-08-31 portfolios/asof/2026-09-30 portfolios/asof/2026-10-31
+      - run: python3 build/compute.py /tmp/arc/portfolios data
+      - run: python3 build/publish.py
+      - name: Privacy scan (blocks the commit if personal data is found)
+        run: python3 tools/privacy_scan.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data pub
+          git diff --staged --quiet && echo "no changes" || (git commit -m "Splits with look-through for funds of funds" && git push)

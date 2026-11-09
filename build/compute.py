@@ -106,7 +106,44 @@ def classify(h, cap):
     return "other", None
 
 
+def load_isin_to_pid():
+    """Any fund or ETF ISIN -> portfolio id (pub/isin.json gives the AMFI code, pub/codes.json the portfolio)."""
+    try:
+        isin = json.load(open(os.path.join(ROOT, "pub", "isin.json")))
+        codes = json.load(open(os.path.join(ROOT, "pub", "codes.json")))
+    except Exception:
+        return {}
+    return {i: codes[c] for i, c in isin.items() if c in codes}
+
+
+def look_through(splits, units, isin2pid):
+    """A fund of funds holds units of other funds. Replace each matched unit holding (counted as "other") with the
+    unit's share of that fund's own split from the same month. One layer only: the underlying split used is the
+    fund's own direct split, so a fund of funds inside a fund of funds stays "other". Unmatched units stay "other".
+    Returns the look-through share per fund (% of NAV that was resolved)."""
+    base = {pid: list(v) for pid, v in splits.items()}
+    resolved = {}
+    for pid, items in units.items():
+        v = list(base[pid]); done = 0.0
+        for isin, pct in items:
+            tp = isin2pid.get(isin)
+            if not tp or tp == pid or tp not in base:
+                continue
+            u = base[tp]
+            if sum(u) < 50:
+                continue
+            for i in range(8):
+                v[i] += pct * u[i] / 100.0
+            v[7] -= pct
+            done += pct
+        if done > 0:
+            splits[pid] = [round(max(x, 0.0), 2) for x in v]
+            resolved[pid] = round(done, 2)
+    return resolved
+
+
 def run(archive: str, out_root: str, only_months=None):
+    isin2pid = load_isin_to_pid()
     changes = load_changes()
     lists = {}
     names = collections.defaultdict(collections.Counter)
@@ -129,7 +166,7 @@ def run(archive: str, out_root: str, only_months=None):
         if cap is None:
             print(f"skip {asof}: no AMFI list {key}", file=sys.stderr)
             continue
-        splits, sectors = {}, {}
+        splits, sectors, units = {}, {}, {}
         for f in files:
             p = json.load(open(f))
             pid = str(p["portfolio_id"])
@@ -140,6 +177,8 @@ def run(archive: str, out_root: str, only_months=None):
                 if bucket is None:
                     continue
                 b[bucket] += h["pct_nav"]
+                if bucket == "other" and h.get("holding_type") == "fund_unit" and (h.get("isin") or "").startswith("INF"):
+                    units.setdefault(pid, []).append(((h.get("isin") or "").strip(), h["pct_nav"]))
                 if s and bucket in ("large", "mid", "small", "unclassified"):
                     sec[s] += h["pct_nav"]
                     if h.get("industry"):
@@ -148,6 +187,8 @@ def run(archive: str, out_root: str, only_months=None):
             sectors[pid] = {k: round(v, 2) for k, v in sorted(sec.items(), key=lambda kv: -kv[1]) if round(v, 2) != 0}
             sc = p.get("scheme") or {}
             catalog[pid] = {"name": sc.get("parent_name") or sc.get("name"), "amc": sc.get("amc_name"), "members": p.get("member_amfi_codes") or []}
+        resolved = look_through(splits, units, isin2pid)
+        print(f"  look-through: {len(resolved)} funds of funds resolved")
         os.makedirs(os.path.join(out_root, "splits"), exist_ok=True)
         os.makedirs(os.path.join(out_root, "sectors"), exist_ok=True)
         json.dump({"as_of": asof, "amfi_list": key, "buckets": BUCKETS, "funds": splits},
