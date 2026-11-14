@@ -1,6 +1,6 @@
 name: screener
 # Builds the all-funds screener bundle (every open-ended Direct-Growth scheme: metrics + weekly NAV history) and
-# publishes it as a GitHub Release asset (not committed to git, so the repo does not grow). Public repo: free minutes.
+# commits it to pub/screener (the app downloads it from there). Public repo: free minutes.
 on:
   schedule:
     - cron: "40 7 20 * *"   # 20th of each month, after the monthly fund-data job
@@ -21,9 +21,11 @@ jobs:
           python-version: "3.12"
       - run: python3 build/screener.py /tmp/screener
       - run: python3 build/enrich.py /tmp/screener
-      - name: Publish release assets
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Publish (commit to pub/screener, which the app downloads from)
         run: |
-          gh release view screener >/dev/null 2>&1 || gh release create screener --title "Screener bundle" --notes "Latest all-funds screener data (replaced on every run)."
-          gh release upload screener /tmp/screener/screener.json.gz /tmp/screener/navd.json.gz --clobber
+          mkdir -p pub/screener
+          cp /tmp/screener/screener.json.gz /tmp/screener/navd.json.gz pub/screener/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add pub/screener
+          git diff --staged --quiet && echo "no changes" || (git commit -m "Update screener bundle" && git pull -q --rebase && git push)
