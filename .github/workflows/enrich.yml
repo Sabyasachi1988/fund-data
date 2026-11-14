@@ -1,9 +1,12 @@
 name: enrich
-# Adds expense ratio, fund size and category-relative risk metrics to the published screener bundle (no NAV refetch).
+# Re-runs only the enrich step on the bundle that is live now (no NAV refetch), checks it and republishes it.
 on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: screener
+  cancel-in-progress: false
 jobs:
   enrich:
     runs-on: ubuntu-latest
@@ -13,16 +16,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Use the current bundle
+      - name: Download the live bundle
         run: |
           mkdir -p /tmp/screener
-          cp pub/screener/screener.json.gz pub/screener/navd.json.gz /tmp/screener/
+          for f in screener.json.gz navd.json.gz; do curl -sfL -o /tmp/screener/$f https://raw.githubusercontent.com/${{ github.repository }}/screener-data/$f; done
           ls -l /tmp/screener
       - run: python3 build/enrich.py /tmp/screener
-      - name: Publish
+      - name: Check and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: build/publish_bundle.sh /tmp/screener
+      - name: Save the expense-ratio cache
         run: |
-          cp /tmp/screener/screener.json.gz /tmp/screener/navd.json.gz pub/screener/
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pub/screener
-          git diff --staged --quiet && echo "no changes" || (git commit -m "Enrich screener bundle" && git pull -q --rebase && git push)
+          git add data/ter_cache.json
+          git diff --staged --quiet && echo "cache unchanged" || (git commit -m "Update expense-ratio cache" && git pull -q --rebase && git push)

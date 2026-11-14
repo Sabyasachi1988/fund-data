@@ -1,6 +1,7 @@
 name: screener
-# Builds the all-funds screener bundle (every open-ended Direct-Growth scheme: metrics + weekly NAV history) and
-# commits it to pub/screener (the app downloads it from there). Public repo: free minutes.
+# Builds the all-funds screener bundle (every open-ended Direct-Growth scheme: metrics + daily NAV history), checks it,
+# and publishes it to the `screener-data` branch (one commit, overwritten each run; the app downloads from there).
+# Then saves the expense-ratio cache so the next run only has to fetch the current month.
 on:
   schedule:
     - cron: "40 7 20 * *"   # 20th of each month, after the monthly fund-data job
@@ -13,19 +14,23 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install openpyxl
+      - run: python3 -m unittest discover -s tests
       - run: python3 build/screener.py /tmp/screener
       - run: python3 build/enrich.py /tmp/screener
-      - name: Publish (commit to pub/screener, which the app downloads from)
+      - name: Check and publish (a failed check stops here and leaves the live data alone)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: build/publish_bundle.sh /tmp/screener
+      - name: Save the expense-ratio cache
         run: |
-          mkdir -p pub/screener
-          cp /tmp/screener/screener.json.gz /tmp/screener/navd.json.gz pub/screener/
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add pub/screener
-          git diff --staged --quiet && echo "no changes" || (git commit -m "Update screener bundle" && git pull -q --rebase && git push)
+          git add data/ter_cache.json
+          git diff --staged --quiet && echo "cache unchanged" || (git commit -m "Update expense-ratio cache" && git pull -q --rebase && git push)

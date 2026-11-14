@@ -10,6 +10,9 @@ import concurrent.futures as cf
 RF = 0.065
 EPOCH = dt.date(1970, 1, 1).toordinal()
 API = "https://www.amfiindia.com/api"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TER_CACHE = os.path.join(ROOT, "data", "ter_cache.json")
+TER_KEEP_DAYS = 550  # a cached ratio older than this is dropped: the fund stopped reporting, so it is not "latest" any more
 
 
 def get(url, tries=8):
@@ -142,14 +145,43 @@ def peer_key(row):
 
 
 # ---------------------------------------------------------------- expense ratio
-def fetch_ter():
-    today = dt.date.today()
-    months = [today, (today.replace(day=1) - dt.timedelta(days=1))]
-    best = {}  # normalized name -> (date, D_TER, R_TER)
+def load_ter_cache(path):
+    """{normalised scheme name: (TER date, Direct TER %)} from the last run, or {} when there is none yet."""
+    try:
+        raw = json.load(open(path))["ter"]
+        return {k: (v[0], float(v[1])) for k, v in raw.items()}
+    except Exception:
+        return {}
+
+
+def save_ter_cache(path, best, today=None):
+    today = today or dt.date.today()
+    cutoff = (today - dt.timedelta(days=TER_KEEP_DAYS)).isoformat()
+    keep = {k: [v[0], v[1]] for k, v in sorted(best.items()) if v[0] >= cutoff}
+    with open(path, "w") as f:
+        json.dump({"updated": today.isoformat(), "ter": keep}, f, separators=(",", ":"))
+    return len(keep)
+
+
+def fetch_ter(cache_path=TER_CACHE, today=None, fetch_page=None):
+    """Latest Direct-plan TER per scheme.
+
+    AMFI publishes the table month by month, 100 rows a page. The month in progress is small (only schemes that have
+    reported so far); the previous month is the full table (about 650 pages, nearly an hour). A scheme's ratio changes
+    rarely, so the last run's result is kept in [cache_path] and only the month in progress is fetched; a scheme that has
+    not reported again keeps its cached ratio. With no cache (first run) the previous month is fetched too, as before.
+    A newer date always wins over an older one."""
+    today = today or dt.date.today()
+    best = load_ter_cache(cache_path)
+    fetch_page = fetch_page or (lambda url: get(url))
+    months = [today]
+    if not best:
+        months.append(today.replace(day=1) - dt.timedelta(days=1))
+    print("TER cache:", len(best), "schemes;", "fetching", [f"{d.month:02d}-{d.year}" for d in months], flush=True)
 
     def page(args):
         m, p = args
-        return get(f"{API}/populate-te-rdata-revised?MF_ID=All&Month={m}&strCat=-1&strType=-1&page={p}&pageSize=100")
+        return fetch_page(f"{API}/populate-te-rdata-revised?MF_ID=All&Month={m}&strCat=-1&strType=-1&page={p}&pageSize=100")
 
     for d in months:
         m = f"{d.month:02d}-{d.year}"
@@ -336,6 +368,7 @@ def main(d):
     print("derived metrics for", len(extra), "funds", round(time.time() - t0), "s", flush=True)
 
     ter = fetch_ter()
+    print("TER cache saved:", save_ter_cache(TER_CACHE, ter), "schemes", flush=True)
     by_code, by_base = fetch_aum()
     matched_t = matched_a = 0
     for r in rows:
