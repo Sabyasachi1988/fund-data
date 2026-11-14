@@ -2,7 +2,7 @@
 
 Input : an archive folder with asof/<YYYY-MM-DD>/<portfolio_id>.json (one JSON per fund portfolio,
         holdings with isin, holding_type, industry, pct_nav) - the open fund-holdings-data layout.
-Output: data/splits/<YYYY-MM>.json   per fund: [large, mid, small, unclassified_equity, foreign, debt, cash, other] in % of NAV
+Output: data/splits/<YYYY-MM>.json   per fund: [large, mid, small, unclassified_equity, foreign, debt, cash, other, reit_invit] in % of NAV
         data/sectors/<YYYY-MM>.json  per fund: {sector_key: % of NAV}
         data/catalog.json            per fund: name, AMC, member AMFI scheme codes
         data/sector_names.json       sector_key -> display name
@@ -15,7 +15,7 @@ import openpyxl
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RATING = re.compile(r"\b(AAA|AA|A1|A2|SOV|ICRA|CRISIL|CARE|FITCH|IND\s?A|BWR|IVR|UNRATED)\b", re.I)
-BUCKETS = ["large", "mid", "small", "unclassified", "foreign", "debt", "cash", "other"]
+BUCKETS = ["large", "mid", "small", "unclassified", "foreign", "debt", "cash", "other", "reit"]
 
 
 def list_key_for(month_end: str) -> str:
@@ -75,6 +75,11 @@ def classify(h, cap):
     isin = (h.get("isin") or "").strip()
     if pct is None:
         return None, None
+    # REIT and InvIT units are listed trusts, not companies: they sit in the AMFI cap lists (so would count as mid/small
+    # cap stocks) and the parser types them "equity", but they are real-estate / infrastructure income vehicles.
+    # An Indian ISIN's characters 8-9 give the security type: 23 = InvIT unit, 25 = REIT unit (01 = share, 07/08 = bond).
+    if isin.startswith("INE") and isin[7:9] in ("23", "25") and t in ("equity", "fund_unit", "commodity", "other"):
+        return "reit", None
     # The upstream parser types some holdings from their section/name rather than what they are. Trust the ISIN:
     # an INE... line with an industry is a listed Indian company whatever it was typed as (e.g. MCX typed "commodity",
     # an AMC's own shares typed "fund_unit"); a foreign-ISIN fund unit or share is foreign exposure, not "other".
@@ -132,7 +137,7 @@ def look_through(splits, units, isin2pid):
             u = base[tp]
             if sum(u) < 50:
                 continue
-            for i in range(8):
+            for i in range(min(len(v), len(u))):
                 v[i] += pct * u[i] / 100.0
             v[7] -= pct
             done += pct
